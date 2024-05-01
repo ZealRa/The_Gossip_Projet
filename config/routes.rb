@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :comments
   get 'cities/show'
   get 'contact', to: 'contact#contact'
   get 'team', to: 'team#team'
