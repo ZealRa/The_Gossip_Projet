@@ -16,6 +16,7 @@ users = []
     user = User.create!(first_name: Faker::Name.first_name, last_name: Faker::Name.last_name, description: Faker::Lorem.paragraph(sentence_count:5), email: Faker::Internet.email, age: Faker::Number.between(from: 13, to: 60))
     users << user
     user.city = cities.sample
+    user.save!
 end
 
 #créer 10 gossips aléatoires
