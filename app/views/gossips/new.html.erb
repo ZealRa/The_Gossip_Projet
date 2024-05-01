@@ -6,17 +6,26 @@
 
 
 
-<%= form_tag gossips_path, method: :post do %>
-
-  <label for="title">Titre :</label><br>
-  <%= text_field_tag 'gossip[title]' %><br>
-
-  <label for="desc">Contenu :</label><br>
-  <%= text_field_tag 'gossip[description]' %><br><br>
-
-  <div class="form-group">
-    <%= label_tag :user_id, "Auteur" %>
-    <%= select_tag 'gossip[user_id]', options_for_select(User.all.collect { |u| [u.first_name, u.id] }), class: "form-control" %>
+<% if flash[:error] %>
+  <div class="alert alert-danger">
+    <%= flash[:error] %>
   </div>
-  <%= submit_tag "Submit" %>
+<% end %>
+
+<% if flash[:error] %>
+  <div class="alert alert-danger">
+    <%= flash[:error] %>
+  </div>
+<% end %>
+
+<%= form_with(model: @gossip, url: gossips_path) do |form| %>
+  <%= form.label :title, "Titre :" %>
+  <%= form.text_field :title, class: "form-control" %>
+
+  <%= form.label :description, "Contenu :" %>
+  <%= form.text_area :description, class: "form-control" %>
+
+  <%= form.hidden_field :user_id, value: User.find_or_create_by(first_name: "Anonyme").id %>
+
+  <%= form.submit "Submit", class: "btn btn-primary" %>
 <% end %>

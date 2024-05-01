@@ -1,9 +1,9 @@
-<h1>New comment</h1>
+<%= form_with(model: [@gossip, @comment], url: gossip_comments_path(@gossip)) do |form| %>
+  <div class="form-group">
+    <%= form.label :text, "Contenu du commentaire" %>
+    <%= form.text_area :text, class: "form-control" %>
+  </div>
+  <%= form.hidden_field :gossip_id, value: @gossip.id %> <!-- Assurez-vous que ce champ est présent -->
+  <%= form.submit "Créer le commentaire", class: "btn btn-primary" %>
+<% end %>
 
-<%= render "form", comment: @comment %>
-
-<br>
-
-<div>
-  <%= link_to "Back to comments", comments_path %>
-</div>

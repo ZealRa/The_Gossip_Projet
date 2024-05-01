@@ -1,6 +1,7 @@
 class GossipsController < ApplicationController
   def show
     @gossip = Gossip.find(params[:id])
+    @comment = Comment.new
   end
 
   def new
@@ -13,9 +14,9 @@ class GossipsController < ApplicationController
 
   def create
     @gossip = Gossip.new(gossip_params)
+    @gossip.user = User.find_or_create_by(first_name: "Anonyme") # Créer un utilisateur anonyme s'il n'existe pas déjà
     if @gossip.save
-      redirect_to @gossip
-      flash[:success] = "Le potin a été enregistré avec succès !"
+      redirect_to @gossip, notice: "Le potin a été enregistré avec succès !"
     else
       flash.now[:error] = "Erreur : Le titre doit être compris entre 3 et 14 caractères, et il ne faut pas qu'un des champs soit vide."
       render :new

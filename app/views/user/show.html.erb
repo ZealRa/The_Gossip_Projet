@@ -16,7 +16,12 @@
         <li class="list-group-item"><strong>Nom:</strong> <%= @user.last_name %></li>
         <li class="list-group-item"><strong>E-mail:</strong> <%= @user.email %></li>
         <li class="list-group-item"><strong>Âge:</strong> <%= @user.age %></li>
-        <li class="list-group-item"><strong>Ville:</strong> <%= link_to @user.city.name, city_path(@user.city) %></li>
+        <% if @user.city %>
+  <li class="list-group-item"><strong>Ville:</strong> <%= link_to @user.city.name, city_path(@user.city) %></li>
+<% else %>
+  <li class="list-group-item"><strong>Ville:</strong> Aucune ville associée</li>
+<% end %>
+
       </ul>
     </div>
   </div>

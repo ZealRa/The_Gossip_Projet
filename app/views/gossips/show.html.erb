@@ -7,13 +7,26 @@
     </div>
     <ul class="list-group list-group-flush">
       <li class="list-group-item"><strong>Auteur:</strong> <%= link_to @gossip.user.first_name, user_path(@gossip.user) %></li>
-      <li class="list-group-item"><strong>Ville:</strong>   <%= link_to @gossip.user.city.name, city_path(@gossip.user.city) %>
+      <li class="list-group-item"><strong>Ville:</strong>
+        <% if @gossip.user.city %>
+          <%= link_to @gossip.user.city.name, city_path(@gossip.user.city) %>
+        <% else %>
+          Ville inconnue
+        <% end %>
       </li>
       <li class="list-group-item"><strong>Date de création:</strong> <%= @gossip.created_at %></li>
     </ul>
   </div>
 </div>
 
+<% @gossip.comments.each do |comment| %>
+  <div class="comment">
+    <p><strong>Auteur :</strong> <%= comment.user ? comment.user.name : "Anonyme" %></p>
+    <p><%= comment.text %></p>
+    <%= link_to "Modifier", edit_comment_path(comment) %>
+  </div>
+<% end %>
 <%= link_to "Modifier le potin", edit_gossip_path(@gossip), class: "btn btn-primary" %>
 <%= button_to "Supprimer", gossip_path(@gossip), method: :delete, class: "btn btn-danger" %>
+<%= link_to "Ajouter un commentaire", new_gossip_comment_path(@gossip), class: "btn btn-primary" %>
 
