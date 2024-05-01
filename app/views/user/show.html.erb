@@ -4,11 +4,21 @@
   <meta charset="UTF-8">
 </head>
 <body>
-  <h1>Voici la page de <%= @user.first_name %> </h1>
-  <p><strong>Prénom:</strong> <%= @user.first_name %></p>
-  <p><strong>Nom:</strong> <%= @user.last_name %></p>
-  <p><strong>E-mail:</strong> <%= @user.email%></p>
-  <p><strong>Âge:</strong> <%= @user.age %></p>
-  <p><strong>Ville:</strong> <%= @user.city.name %></p>
+  <div class="container">
+    <h1 class="mt-5">Profil de <%= @user.first_name %> <%= @user.last_name %></h1>
+    <div class="card mt-3">
+      <div class="card-body">
+        <h5 class="card-title">Description</h5>
+        <p class="card-text"><%= @user.description %></p>
+      </div>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item"><strong>Prénom:</strong> <%= @user.first_name %></li>
+        <li class="list-group-item"><strong>Nom:</strong> <%= @user.last_name %></li>
+        <li class="list-group-item"><strong>E-mail:</strong> <%= @user.email %></li>
+        <li class="list-group-item"><strong>Âge:</strong> <%= @user.age %></li>
+        <li class="list-group-item"><strong>Ville:</strong> <%= link_to @user.city.name, city_path(@user.city) %></li>
+      </ul>
+    </div>
+  </div>
 </body>
 </html>

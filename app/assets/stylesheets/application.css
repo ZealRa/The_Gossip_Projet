@@ -17,3 +17,51 @@
 
  @import 'bootstrap/scss/bootstrap';
  @import 'bootstrap-icons/font/bootstrap-icons';
+
+ /* app/assets/stylesheets/team.css */
+
+.team-section {
+  text-align: center;
+  padding: 20px;
+}
+
+.team-member {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.team-member h2 {
+  color: #333;
+}
+
+.team-member p {
+  color: #666;
+}
+
+.card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  color: #333;
+}
+
+.card-text {
+  color: #666;
+}
+
+.list-group-item {
+  background-color: #f9f9f9;
+  border: none;
+}
+
+.list-group-item strong {
+  font-weight: bold;
+  color: #333;
+}

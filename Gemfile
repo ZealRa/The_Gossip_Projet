@@ -9,6 +9,8 @@ gem "faker"
 
 gem 'table_print'
 
+gem 'turbo-rails'
+
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem "sprockets-rails"
 

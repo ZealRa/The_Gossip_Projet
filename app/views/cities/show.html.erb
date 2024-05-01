@@ -1,0 +1,16 @@
+<!-- app/views/cities/show.html.erb -->
+
+<div class="container">
+  <h1 class="mt-5">Détails de la ville <%= @city.name %></h1>
+  
+  <div class="card mt-3">
+    <div class="card-body">
+      <h5 class="card-title">Potins écrits par les utilisateurs de <%= @city.name %></h5>
+      <ul class="list-group list-group-flush">
+        <% @gossips.each do |gossip| %>
+          <li class="list-group-item"><%= link_to gossip.title, gossip_path(gossip) %></li>
+        <% end %>
+      </ul>
+    </div>
+  </div>
+</div>
