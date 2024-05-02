@@ -29,6 +29,16 @@
             <p class="card-text">
               <%= gossip.title %>
               <%= link_to "En savoir plus", gossip_path(gossip), class: "btn btn-primary" %>
+              <!-- Ajouter le bouton de like -->
+              <% if current_user %>
+                <% if current_user.likes?(gossip) %>
+                  <%= button_to "Unlike", unlike_gossip_path(gossip), method: :delete, class: "btn btn-danger" %>
+                <% else %>
+                  <%= button_to "Like", like_gossip_path(gossip), method: :post, class: "btn btn-primary" %>
+                <% end %>
+              <% end %>
+              <!-- Afficher le nombre de likes -->
+              <span class="badge bg-info text-dark"><%= gossip.likes.count %></span>
             </p>
           <% end %>
         </div>

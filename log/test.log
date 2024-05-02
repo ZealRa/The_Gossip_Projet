@@ -1,0 +1,277 @@
+  [1m[35m (47.9ms)[0m  [1m[35mDROP DATABASE IF EXISTS "THP_ruby_bdd_gossips_test"[0m
+  [1m[35m (210.7ms)[0m  [1m[35mCREATE DATABASE "THP_ruby_bdd_gossips_test" ENCODING = 'unicode'[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "cities" CASCADE[0m
+  [1m[35m (11.0ms)[0m  [1m[35mCREATE TABLE "cities" ("id" bigserial primary key, "name" character varying, "zip_code" integer, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "comments" CASCADE[0m
+  [1m[35m (12.0ms)[0m  [1m[35mCREATE TABLE "comments" ("id" bigserial primary key, "text" text, "user_id" bigint NOT NULL, "gossip_id" bigint NOT NULL, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (8.3ms)[0m  [1m[35mCREATE INDEX "index_comments_on_gossip_id" ON "comments" ("gossip_id")[0m
+  [1m[35m (8.9ms)[0m  [1m[35mCREATE INDEX "index_comments_on_user_id" ON "comments" ("user_id")[0m
+  [1m[35m (0.5ms)[0m  [1m[35mDROP TABLE IF EXISTS "gossip_tags" CASCADE[0m
+  [1m[35m (11.9ms)[0m  [1m[35mCREATE TABLE "gossip_tags" ("id" bigserial primary key, "gossip_id" bigint, "tag_id" bigint, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (11.3ms)[0m  [1m[35mCREATE INDEX "index_gossip_tags_on_gossip_id" ON "gossip_tags" ("gossip_id")[0m
+  [1m[35m (10.8ms)[0m  [1m[35mCREATE INDEX "index_gossip_tags_on_tag_id" ON "gossip_tags" ("tag_id")[0m
+  [1m[35m (0.4ms)[0m  [1m[35mDROP TABLE IF EXISTS "gossips" CASCADE[0m
+  [1m[35m (14.7ms)[0m  [1m[35mCREATE TABLE "gossips" ("id" bigserial primary key, "title" text, "description" text, "user_id" bigint, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (7.2ms)[0m  [1m[35mCREATE INDEX "index_gossips_on_user_id" ON "gossips" ("user_id")[0m
+  [1m[35m (0.4ms)[0m  [1m[35mDROP TABLE IF EXISTS "likes" CASCADE[0m
+  [1m[35m (7.6ms)[0m  [1m[35mCREATE TABLE "likes" ("id" bigserial primary key, "user_id" bigint NOT NULL, "gossip_id" bigint NOT NULL, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (5.2ms)[0m  [1m[35mCREATE INDEX "index_likes_on_gossip_id" ON "likes" ("gossip_id")[0m
+  [1m[35m (5.3ms)[0m  [1m[35mCREATE INDEX "index_likes_on_user_id" ON "likes" ("user_id")[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "messages" CASCADE[0m
+  [1m[35m (9.0ms)[0m  [1m[35mCREATE TABLE "messages" ("id" bigserial primary key, "user_id" bigint, "message" text, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (5.3ms)[0m  [1m[35mCREATE INDEX "index_messages_on_user_id" ON "messages" ("user_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "recipients" CASCADE[0m
+  [1m[35m (5.4ms)[0m  [1m[35mCREATE TABLE "recipients" ("id" bigserial primary key, "user_id" bigint, "message_id" bigint, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (5.2ms)[0m  [1m[35mCREATE INDEX "index_recipients_on_message_id" ON "recipients" ("message_id")[0m
+  [1m[35m (5.6ms)[0m  [1m[35mCREATE INDEX "index_recipients_on_user_id" ON "recipients" ("user_id")[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "tags" CASCADE[0m
+  [1m[35m (10.2ms)[0m  [1m[35mCREATE TABLE "tags" ("id" bigserial primary key, "name" text, "user_id" bigint, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (5.4ms)[0m  [1m[35mCREATE INDEX "index_tags_on_user_id" ON "tags" ("user_id")[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "users" CASCADE[0m
+  [1m[35m (11.8ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "first_name" text, "last_name" text, "email" text, "age" integer, "description" integer, "city_id" bigint, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, "password_digest" character varying)[0m
+  [1m[35m (5.6ms)[0m  [1m[35mCREATE INDEX "index_users_on_city_id" ON "users" ("city_id")[0m
+  [1m[35m (2.4ms)[0m  [1m[35mALTER TABLE "comments" ADD CONSTRAINT "fk_rails_0a34ec365a"
+FOREIGN KEY ("gossip_id")
+  REFERENCES "gossips" ("id")
+[0m
+  [1m[35m (2.7ms)[0m  [1m[35mALTER TABLE "comments" ADD CONSTRAINT "fk_rails_03de2dc08c"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+[0m
+  [1m[35m (2.0ms)[0m  [1m[35mALTER TABLE "likes" ADD CONSTRAINT "fk_rails_7ac87b559c"
+FOREIGN KEY ("gossip_id")
+  REFERENCES "gossips" ("id")
+[0m
+  [1m[35m (2.2ms)[0m  [1m[35mALTER TABLE "likes" ADD CONSTRAINT "fk_rails_1e09b5dabf"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+[0m
+  [1m[35m (9.7ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20240502121309)[0m
+  [1m[35m (1.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20240502070839),
+(20240501145650),
+(20240425155516),
+(20240425153138),
+(20240425151809),
+(20240425142639),
+(20240425141240),
+(20240425140854),
+(20240425140515);[0m
+  [1m[35m (9.3ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[36mActiveRecord::InternalMetadata Create (1.7ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ('environment', 'test', '2024-05-02 12:21:07.273080', '2024-05-02 12:21:07.273083') RETURNING "key"[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "schema_sha1"]]
+  [1m[36mActiveRecord::InternalMetadata Create (1.7ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ('schema_sha1', '42eff04a110b1b73ea6b26ba68978f3164d12874', '2024-05-02 12:21:07.276218', '2024-05-02 12:21:07.276219') RETURNING "key"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.5ms)[0m  [1m[35mALTER TABLE "cities" DISABLE TRIGGER ALL;ALTER TABLE "likes" DISABLE TRIGGER ALL;ALTER TABLE "gossip_tags" DISABLE TRIGGER ALL;ALTER TABLE "messages" DISABLE TRIGGER ALL;ALTER TABLE "recipients" DISABLE TRIGGER ALL;ALTER TABLE "gossips" DISABLE TRIGGER ALL;ALTER TABLE "tags" DISABLE TRIGGER ALL;ALTER TABLE "comments" DISABLE TRIGGER ALL;ALTER TABLE "users" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" DISABLE TRIGGER ALL[0m
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (2.2ms)[0m  [1m[31mDELETE FROM "cities";
+DELETE FROM "comments";
+DELETE FROM "gossip_tags";
+DELETE FROM "gossips";
+DELETE FROM "messages";
+DELETE FROM "recipients";
+DELETE FROM "tags";
+DELETE FROM "users";
+INSERT INTO "cities" ("id", "name", "zip_code", "created_at", "updated_at") VALUES (980190962, DEFAULT, DEFAULT, '2024-05-02 12:21:07.450810', '2024-05-02 12:21:07.450810'), (298486374, DEFAULT, DEFAULT, '2024-05-02 12:21:07.450810', '2024-05-02 12:21:07.450810');
+INSERT INTO "comments" ("id", "text", "user_id", "gossip_id", "created_at", "updated_at") VALUES (980190962, 'MyText', 980190962, 980190962, '2024-05-02 12:21:07.461452', '2024-05-02 12:21:07.461452'), (298486374, 'MyText', 298486374, 298486374, '2024-05-02 12:21:07.461452', '2024-05-02 12:21:07.461452');
+INSERT INTO "gossip_tags" ("id", "gossip_id", "tag_id", "created_at", "updated_at") VALUES (980190962, DEFAULT, DEFAULT, '2024-05-02 12:21:07.467043', '2024-05-02 12:21:07.467043'), (298486374, DEFAULT, DEFAULT, '2024-05-02 12:21:07.467043', '2024-05-02 12:21:07.467043');
+INSERT INTO "gossips" ("id", "title", "description", "user_id", "created_at", "updated_at") VALUES (980190962, DEFAULT, DEFAULT, DEFAULT, '2024-05-02 12:21:07.469383', '2024-05-02 12:21:07.469383'), (298486374, DEFAULT, DEFAULT, DEFAULT, '2024-05-02 12:21:07.469383', '2024-05-02 12:21:07.469383');
+INSERT INTO "messages" ("id", "user_id", "message", "created_at", "updated_at") VALUES (980190962, DEFAULT, DEFAULT, '2024-05-02 12:21:07.470468', '2024-05-02 12:21:07.470468'), (298486374, DEFAULT, DEFAULT, '2024-05-02 12:21:07.470468', '2024-05-02 12:21:07.470468');
+INSERT INTO "recipients" ("id", "user_id", "message_id", "created_at", "updated_at") VALUES (980190962, DEFAULT, DEFAULT, '2024-05-02 12:21:07.472871', '2024-05-02 12:21:07.472871'), (298486374, DEFAULT, DEFAULT, '2024-05-02 12:21:07.472871', '2024-05-02 12:21:07.472871');
+INSERT INTO "tags" ("id", "name", "user_id", "created_at", "updated_at") VALUES (980190962, DEFAULT, DEFAULT, '2024-05-02 12:21:07.475072', '2024-05-02 12:21:07.475072'), (298486374, DEFAULT, DEFAULT, '2024-05-02 12:21:07.475072', '2024-05-02 12:21:07.475072');
+INSERT INTO "users" ("id", "first_name", "last_name", "email", "age", "description", "city_id", "created_at", "updated_at", "password_digest") VALUES (980190962, DEFAULT, DEFAULT, DEFAULT, DEFAULT, DEFAULT, DEFAULT, '2024-05-02 12:21:07.477269', '2024-05-02 12:21:07.477269', DEFAULT), (298486374, DEFAULT, DEFAULT, DEFAULT, DEFAULT, DEFAULT, DEFAULT, '2024-05-02 12:21:07.477269', '2024-05-02 12:21:07.477269', DEFAULT)[0m
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "cities" ENABLE TRIGGER ALL;ALTER TABLE "likes" ENABLE TRIGGER ALL;ALTER TABLE "gossip_tags" ENABLE TRIGGER ALL;ALTER TABLE "messages" ENABLE TRIGGER ALL;ALTER TABLE "recipients" ENABLE TRIGGER ALL;ALTER TABLE "gossips" ENABLE TRIGGER ALL;ALTER TABLE "tags" ENABLE TRIGGER ALL;ALTER TABLE "comments" ENABLE TRIGGER ALL;ALTER TABLE "users" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" ENABLE TRIGGER ALL[0m
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (7.7ms)[0m  [1m[35mdo $$
+  declare r record;
+BEGIN
+FOR r IN (
+  SELECT FORMAT(
+    'UPDATE pg_constraint SET convalidated=false WHERE conname = ''%I'' AND connamespace::regnamespace = ''%I''::regnamespace; ALTER TABLE %I.%I VALIDATE CONSTRAINT %I;',
+    constraint_name,
+    table_schema,
+    table_schema,
+    table_name,
+    constraint_name
+  ) AS constraint_check
+  FROM information_schema.table_constraints WHERE constraint_type = 'FOREIGN KEY'
+)
+  LOOP
+    EXECUTE (r.constraint_check);
+  END LOOP;
+END;
+$$;
+[0m
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+-----------------------------------------------
+ContactsControllerTest: test_should_get_contact
+-----------------------------------------------
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+--------------------------------------------------
+CommentsControllerTest: test_should_create_comment
+--------------------------------------------------
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."id" = $1 LIMIT $2[0m  [["id", 980190962], ["LIMIT", 1]]
+  [1m[36mComment Count (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments"[0m
+Started POST "/comments" for 127.0.0.1 at 2024-05-02 14:21:07 +0200
+Processing by CommentsController#create as HTML
+  Parameters: {"comment"=>{"gossip_id"=>"980190962", "text"=>"MyText", "user_id"=>"980190962"}}
+Completed 404 Not Found in 2ms (ActiveRecord: 0.0ms | Allocations: 1143)
+  
+ActiveRecord::RecordNotFound (Couldn't find Gossip without an ID):
+  
+app/controllers/comments_controller.rb:25:in `create'
+test/controllers/comments_controller_test.rb:20:in `block (2 levels) in <class:CommentsControllerTest>'
+test/controllers/comments_controller_test.rb:19:in `block in <class:CommentsControllerTest>'
+  [1m[36mCACHE Comment Count (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments"[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+---------------------------------------------------
+CommentsControllerTest: test_should_destroy_comment
+---------------------------------------------------
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."id" = $1 LIMIT $2[0m  [["id", 980190962], ["LIMIT", 1]]
+  [1m[36mComment Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments"[0m
+Started DELETE "/comments/980190962" for 127.0.0.1 at 2024-05-02 14:21:08 +0200
+Processing by CommentsController#destroy as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."id" = $1 LIMIT $2[0m  [["id", 980190962], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mComment Destroy (0.5ms)[0m  [1m[31mDELETE FROM "comments" WHERE "comments"."id" = $1[0m  [["id", 980190962]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/comments
+Completed 302 Found in 2ms (ActiveRecord: 1.0ms | Allocations: 1212)
+  [1m[36mComment Count (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments"[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+------------------------------------------------
+CommentsControllerTest: test_should_show_comment
+------------------------------------------------
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."id" = $1 LIMIT $2[0m  [["id", 980190962], ["LIMIT", 1]]
+Started GET "/comments/980190962" for 127.0.0.1 at 2024-05-02 14:21:08 +0200
+Processing by CommentsController#show as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."id" = $1 LIMIT $2[0m  [["id", 980190962], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering comments/show.html.erb within layouts/application
+  Rendered comments/_comment.html.erb (Duration: 0.9ms | Allocations: 213)
+  Rendered comments/show.html.erb within layouts/application (Duration: 4.8ms | Allocations: 1117)
+  Rendered layout layouts/application.html.erb (Duration: 6.2ms | Allocations: 1889)
+Completed 200 OK in 9ms (Views: 7.7ms | ActiveRecord: 0.2ms | Allocations: 3161)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+---------------------------------------------
+CommentsControllerTest: test_should_get_index
+---------------------------------------------
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."id" = $1 LIMIT $2[0m  [["id", 980190962], ["LIMIT", 1]]
+Started GET "/comments" for 127.0.0.1 at 2024-05-02 14:21:08 +0200
+Processing by CommentsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering comments/index.html.erb within layouts/application
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments"[0m
+  Rendered comments/_comment.html.erb (Duration: 0.1ms | Allocations: 21)
+  Rendered comments/_comment.html.erb (Duration: 0.0ms | Allocations: 20)
+  Rendered comments/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 688)
+  Rendered layout layouts/application.html.erb (Duration: 2.7ms | Allocations: 952)
+Completed 200 OK in 4ms (Views: 2.7ms | ActiveRecord: 0.3ms | Allocations: 1257)
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+--------------------------------------------
+CommentsControllerTest: test_should_get_edit
+--------------------------------------------
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."id" = $1 LIMIT $2[0m  [["id", 980190962], ["LIMIT", 1]]
+Started GET "/comments/980190962/edit" for 127.0.0.1 at 2024-05-02 14:21:08 +0200
+Processing by CommentsController#edit as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."id" = $1 LIMIT $2[0m  [["id", 980190962], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering comments/edit.html.erb within layouts/application
+  Rendered comments/_form.html.erb (Duration: 4.3ms | Allocations: 2068)
+  Rendered comments/edit.html.erb within layouts/application (Duration: 5.6ms | Allocations: 2374)
+  Rendered layout layouts/application.html.erb (Duration: 6.5ms | Allocations: 2711)
+Completed 200 OK in 8ms (Views: 6.9ms | ActiveRecord: 0.2ms | Allocations: 3120)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+--------------------------------------------------
+CommentsControllerTest: test_should_update_comment
+--------------------------------------------------
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."id" = $1 LIMIT $2[0m  [["id", 980190962], ["LIMIT", 1]]
+Started PATCH "/comments/980190962" for 127.0.0.1 at 2024-05-02 14:21:08 +0200
+Processing by CommentsController#update as HTML
+  Parameters: {"comment"=>{"gossip_id"=>"980190962", "text"=>"MyText", "user_id"=>"980190962"}, "id"=>"980190962"}
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."id" = $1 LIMIT $2[0m  [["id", 980190962], ["LIMIT", 1]]
+Redirected to http://www.example.com/comments/980190962
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms | Allocations: 868)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+-------------------------------------------
+CommentsControllerTest: test_should_get_new
+-------------------------------------------
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."id" = $1 LIMIT $2[0m  [["id", 980190962], ["LIMIT", 1]]
+Started GET "/comments/new" for 127.0.0.1 at 2024-05-02 14:21:08 +0200
+Processing by CommentsController#new as HTML
+Completed 404 Not Found in 0ms (ActiveRecord: 0.0ms | Allocations: 166)
+  
+ActiveRecord::RecordNotFound (Couldn't find Gossip without an ID):
+  
+app/controllers/comments_controller.rb:15:in `new'
+test/controllers/comments_controller_test.rb:14:in `block in <class:CommentsControllerTest>'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+---------------------------------------------------
+WelcomeControllerTest: test_should_get_landing_page
+---------------------------------------------------
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+-----------------------------------------------
+SessionsControllerTest: test_should_get_destroy
+-----------------------------------------------
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+-------------------------------------------
+SessionsControllerTest: test_should_get_new
+-------------------------------------------
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+----------------------------------------------
+SessionsControllerTest: test_should_get_create
+----------------------------------------------
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+------------------------------------------
+CitiesControllerTest: test_should_get_show
+------------------------------------------
+Started GET "/cities/show" for 127.0.0.1 at 2024-05-02 14:21:08 +0200
+Processing by CitiesController#show as HTML
+Completed 404 Not Found in 0ms (ActiveRecord: 0.0ms | Allocations: 287)
+  
+ActiveRecord::RecordNotFound (Couldn't find City without an ID):
+  
+app/controllers/cities_controller.rb:3:in `show'
+test/controllers/cities_controller_test.rb:5:in `block in <class:CitiesControllerTest>'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+----------------------------------------
+UserControllerTest: test_should_get_show
+----------------------------------------
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+-----------------------------------------
+PagesControllerTest: test_should_get_team
+-----------------------------------------
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+------------------------------------------
+GossipControllerTest: test_should_get_show
+------------------------------------------
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m

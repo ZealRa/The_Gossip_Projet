@@ -46,7 +46,26 @@ class GossipsController < ApplicationController
     redirect_to gossips_path, notice: "Le potin a été supprimé avec succès !"
   end
 
+  def like
+    gossip = Gossip.find(params[:gossip_id]) # Utiliser params[:id] pour obtenir l'ID du gossip
+    unless current_user.likes?(gossip)
+      current_user.likes << gossip
+      redirect_to gossip, notice: "Vous avez liké ce potin avec succès !"
+    else
+      redirect_to gossip, alert: "Vous avez déjà liké ce potin !"
+    end
+  end
+
+  def unlike
+    gossip = Gossip.find(params[:gossip_id])
+    current_user.unlike(gossip) # Appeler la méthode 'unlike' de l'utilisateur pour déliker le potin
+    redirect_to gossip, notice: "Vous avez déliké ce potin avec succès !"
+  end
+
+
+
   private
+
   def require_login
     unless current_user
       flash[:alert] = "Vous devez être connecté pour accéder à cette page."
