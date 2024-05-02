@@ -1,29 +1,25 @@
 <div class="container contact-form">
-    <div class="contact-image">
-    </div>
-    <form method="post">
-        <h3>Laissez-nous un message !</h3>
-        <div class="row">
-            <div class="col-md-6">
-                <div class="form-group">
-                    <label for="txtName">Votre nom *</label>
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <form method="post">
+                <h3 class="mb-4">Laissez-nous un message !</h3>
+                <div class="mb-3">
+                    <label for="txtName" class="form-label">Votre nom *</label>
                     <input type="text" name="txtName" id="txtName" class="form-control" placeholder="Votre nom *" value="" />
                 </div>
-                <div class="form-group">
-                    <label for="txtEmail">Votre adresse email *</label>
+                <div class="mb-3">
+                    <label for="txtEmail" class="form-label">Votre adresse email *</label>
                     <input type="text" name="txtEmail" id="txtEmail" class="form-control" placeholder="Votre adresse email *" value="" />
                 </div>
-                <div class="form-group">
-                    <input type="submit" name="btnSubmit" class="btnContact" value="Envoyer" />
+                <div class="mb-3">
+                    <label for="txtMsg" class="form-label">Votre message *</label>
+                    <textarea name="txtMsg" id="txtMsg" class="form-control" placeholder="Votre message *" style="height: 150px;"></textarea>
                 </div>
-            </div>
-            <div class="col-md-6">
-                <div class="form-group">
-                    <label for="txtMsg">Votre message *</label>
-                    <textarea name="txtMsg" id="txtMsg" class="form-control" placeholder="Votre message *" style="width: 100%; height: 150px;"></textarea>
+                <div class="mb-3">
+                    <input type="submit" name="btnSubmit" class="btn btn-primary" value="Envoyer" />
                 </div>
-            </div>
+                <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+            </form>
         </div>
-        <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
-    </form>
+    </div>
 </div>

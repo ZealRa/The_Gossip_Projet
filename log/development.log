@@ -17606,3 +17606,383 @@ Processing by WelcomeController#index as HTML
 Completed 200 OK in 12ms (Views: 8.9ms | ActiveRecord: 2.2ms | Allocations: 3658)
 
 
+Started GET "/" for 127.0.0.1 at 2024-05-02 12:08:07 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/welcome/index.html.erb:24
+  [1m[36mGossip Load (0.7ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" WHERE "gossips"."user_id" IN ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11)[0m  [["user_id", 1], ["user_id", 2], ["user_id", 3], ["user_id", 4], ["user_id", 5], ["user_id", 6], ["user_id", 7], ["user_id", 8], ["user_id", 9], ["user_id", 10], ["user_id", 11]]
+  ↳ app/views/welcome/index.html.erb:24
+  Rendered welcome/index.html.erb within layouts/application (Duration: 78.5ms | Allocations: 30800)
+  Rendered layout layouts/application.html.erb (Duration: 79.9ms | Allocations: 31690)
+Completed 200 OK in 238ms (Views: 73.1ms | ActiveRecord: 9.8ms | Allocations: 326552)
+
+
+Started GET "/gossips/5" for 127.0.0.1 at 2024-05-02 12:08:30 +0200
+Processing by GossipsController#show as HTML
+  Parameters: {"id"=>"5"}
+Redirected to http://127.0.0.1:3000/login
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 593)
+
+
+Started GET "/login" for 127.0.0.1 at 2024-05-02 12:08:30 +0200
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 5.4ms | Allocations: 3469)
+  Rendered layout layouts/application.html.erb (Duration: 6.2ms | Allocations: 3809)
+Completed 200 OK in 7ms (Views: 6.8ms | ActiveRecord: 0.0ms | Allocations: 4328)
+
+
+Started GET "/login" for 127.0.0.1 at 2024-05-02 12:08:33 +0200
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 2.6ms | Allocations: 2306)
+  Rendered layout layouts/application.html.erb (Duration: 3.7ms | Allocations: 2643)
+Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.0ms | Allocations: 2918)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2024-05-02 12:08:34 +0200
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 3.0ms | Allocations: 1348)
+  Rendered layout layouts/application.html.erb (Duration: 3.9ms | Allocations: 1688)
+Completed 200 OK in 6ms (Views: 5.0ms | ActiveRecord: 0.0ms | Allocations: 2171)
+
+
+Started GET "/" for 127.0.0.1 at 2024-05-02 12:10:28 +0200
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/welcome/index.html.erb:24
+  [1m[36mGossip Load (0.3ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" WHERE "gossips"."user_id" IN ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11)[0m  [["user_id", 1], ["user_id", 2], ["user_id", 3], ["user_id", 4], ["user_id", 5], ["user_id", 6], ["user_id", 7], ["user_id", 8], ["user_id", 9], ["user_id", 10], ["user_id", 11]]
+  ↳ app/views/welcome/index.html.erb:24
+  Rendered welcome/index.html.erb within layouts/application (Duration: 18.4ms | Allocations: 11788)
+  Rendered layout layouts/application.html.erb (Duration: 19.6ms | Allocations: 12561)
+Completed 200 OK in 35ms (Views: 16.2ms | ActiveRecord: 4.5ms | Allocations: 18313)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2024-05-02 12:10:29 +0200
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 3.9ms | Allocations: 1255)
+  Rendered layout layouts/application.html.erb (Duration: 5.4ms | Allocations: 1595)
+Completed 200 OK in 7ms (Views: 6.2ms | ActiveRecord: 0.0ms | Allocations: 2080)
+
+
+Started GET "/login" for 127.0.0.1 at 2024-05-02 12:10:31 +0200
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 4.2ms | Allocations: 2650)
+  Rendered layout layouts/application.html.erb (Duration: 5.6ms | Allocations: 2990)
+Completed 200 OK in 8ms (Views: 6.8ms | ActiveRecord: 0.0ms | Allocations: 3468)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2024-05-02 12:10:34 +0200
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 1.9ms | Allocations: 753)
+  Rendered layout layouts/application.html.erb (Duration: 2.9ms | Allocations: 1090)
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.0ms | Allocations: 1357)
+
+
+Started GET "/" for 127.0.0.1 at 2024-05-02 12:10:36 +0200
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/welcome/index.html.erb:24
+  [1m[36mGossip Load (0.8ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" WHERE "gossips"."user_id" IN ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11)[0m  [["user_id", 1], ["user_id", 2], ["user_id", 3], ["user_id", 4], ["user_id", 5], ["user_id", 6], ["user_id", 7], ["user_id", 8], ["user_id", 9], ["user_id", 10], ["user_id", 11]]
+  ↳ app/views/welcome/index.html.erb:24
+  Rendered welcome/index.html.erb within layouts/application (Duration: 13.2ms | Allocations: 3065)
+  Rendered layout layouts/application.html.erb (Duration: 15.3ms | Allocations: 3398)
+Completed 200 OK in 18ms (Views: 14.9ms | ActiveRecord: 1.7ms | Allocations: 3680)
+
+
+Started GET "/team" for 127.0.0.1 at 2024-05-02 12:11:54 +0200
+Processing by TeamController#team as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering team/team.html.erb within layouts/application
+  Rendered team/team.html.erb within layouts/application (Duration: 0.7ms | Allocations: 113)
+  Rendered layout layouts/application.html.erb (Duration: 2.6ms | Allocations: 668)
+Completed 200 OK in 4ms (Views: 3.7ms | ActiveRecord: 0.0ms | Allocations: 1123)
+
+
+Started GET "/" for 127.0.0.1 at 2024-05-02 12:13:01 +0200
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/welcome/index.html.erb:24
+  [1m[36mGossip Load (0.3ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" WHERE "gossips"."user_id" IN ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11)[0m  [["user_id", 1], ["user_id", 2], ["user_id", 3], ["user_id", 4], ["user_id", 5], ["user_id", 6], ["user_id", 7], ["user_id", 8], ["user_id", 9], ["user_id", 10], ["user_id", 11]]
+  ↳ app/views/welcome/index.html.erb:24
+  Rendered welcome/index.html.erb within layouts/application (Duration: 17.8ms | Allocations: 11794)
+  Rendered layout layouts/application.html.erb (Duration: 19.0ms | Allocations: 12567)
+Completed 200 OK in 33ms (Views: 15.5ms | ActiveRecord: 4.7ms | Allocations: 18313)
+
+
+Started GET "/team" for 127.0.0.1 at 2024-05-02 12:13:03 +0200
+Processing by TeamController#team as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering team/team.html.erb within layouts/application
+  Rendered team/team.html.erb within layouts/application (Duration: 0.3ms | Allocations: 102)
+  Rendered layout layouts/application.html.erb (Duration: 1.2ms | Allocations: 660)
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.0ms | Allocations: 1113)
+
+
+Started GET "/contact" for 127.0.0.1 at 2024-05-02 12:13:07 +0200
+Processing by ContactController#contact as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering contact/contact.html.erb within layouts/application
+  Rendered contact/contact.html.erb within layouts/application (Duration: 0.5ms | Allocations: 108)
+  Rendered layout layouts/application.html.erb (Duration: 1.6ms | Allocations: 657)
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.0ms | Allocations: 1112)
+
+
+Started GET "/" for 127.0.0.1 at 2024-05-02 12:14:30 +0200
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/welcome/index.html.erb:24
+  [1m[36mGossip Load (0.3ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" WHERE "gossips"."user_id" IN ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11)[0m  [["user_id", 1], ["user_id", 2], ["user_id", 3], ["user_id", 4], ["user_id", 5], ["user_id", 6], ["user_id", 7], ["user_id", 8], ["user_id", 9], ["user_id", 10], ["user_id", 11]]
+  ↳ app/views/welcome/index.html.erb:24
+  Rendered welcome/index.html.erb within layouts/application (Duration: 19.1ms | Allocations: 11772)
+  Rendered layout layouts/application.html.erb (Duration: 20.6ms | Allocations: 12545)
+Completed 200 OK in 35ms (Views: 17.3ms | ActiveRecord: 4.5ms | Allocations: 18241)
+
+
+Started GET "/team" for 127.0.0.1 at 2024-05-02 12:14:32 +0200
+Processing by TeamController#team as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering team/team.html.erb within layouts/application
+  Rendered team/team.html.erb within layouts/application (Duration: 0.4ms | Allocations: 116)
+  Rendered layout layouts/application.html.erb (Duration: 1.3ms | Allocations: 659)
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.0ms | Allocations: 1112)
+
+
+Started GET "/contact" for 127.0.0.1 at 2024-05-02 12:14:34 +0200
+Processing by ContactController#contact as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering contact/contact.html.erb within layouts/application
+  Rendered contact/contact.html.erb within layouts/application (Duration: 2.0ms | Allocations: 362)
+  Rendered layout layouts/application.html.erb (Duration: 3.8ms | Allocations: 722)
+Completed 200 OK in 6ms (Views: 5.2ms | ActiveRecord: 0.0ms | Allocations: 1177)
+
+
+Started GET "/team" for 127.0.0.1 at 2024-05-02 12:14:56 +0200
+Processing by TeamController#team as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering team/team.html.erb within layouts/application
+  Rendered team/team.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 1.0ms | Allocations: 562)
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.0ms | Allocations: 810)
+
+
+Started GET "/login" for 127.0.0.1 at 2024-05-02 12:14:57 +0200
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 2.0ms | Allocations: 2684)
+  Rendered layout layouts/application.html.erb (Duration: 2.7ms | Allocations: 3024)
+Completed 200 OK in 4ms (Views: 3.7ms | ActiveRecord: 0.0ms | Allocations: 3511)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2024-05-02 12:15:00 +0200
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 2.5ms | Allocations: 1189)
+  Rendered layout layouts/application.html.erb (Duration: 3.8ms | Allocations: 1529)
+Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.0ms | Allocations: 2004)
+
+
+Started GET "/" for 127.0.0.1 at 2024-05-02 12:15:01 +0200
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/welcome/index.html.erb:24
+  [1m[36mGossip Load (0.3ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" WHERE "gossips"."user_id" IN ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11)[0m  [["user_id", 1], ["user_id", 2], ["user_id", 3], ["user_id", 4], ["user_id", 5], ["user_id", 6], ["user_id", 7], ["user_id", 8], ["user_id", 9], ["user_id", 10], ["user_id", 11]]
+  ↳ app/views/welcome/index.html.erb:24
+  Rendered welcome/index.html.erb within layouts/application (Duration: 7.1ms | Allocations: 3044)
+  Rendered layout layouts/application.html.erb (Duration: 8.2ms | Allocations: 3377)
+Completed 200 OK in 10ms (Views: 8.3ms | ActiveRecord: 0.8ms | Allocations: 3659)
+
+
+Started GET "/login" for 127.0.0.1 at 2024-05-02 12:15:42 +0200
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 3.3ms | Allocations: 2315)
+  Rendered layout layouts/application.html.erb (Duration: 5.3ms | Allocations: 2652)
+Completed 200 OK in 7ms (Views: 6.4ms | ActiveRecord: 0.0ms | Allocations: 2921)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2024-05-02 12:15:43 +0200
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 4.9ms | Allocations: 762)
+  Rendered layout layouts/application.html.erb (Duration: 8.3ms | Allocations: 1099)
+Completed 200 OK in 12ms (Views: 10.3ms | ActiveRecord: 0.0ms | Allocations: 1367)
+
+
+Started POST "/users" for 127.0.0.1 at 2024-05-02 12:16:07 +0200
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"thomas@example.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"S'inscrire"}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:12:in `create'
+  [1m[36mUser Create (1.3ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "age", "description", "city_id", "created_at", "updated_at", "password_digest") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["first_name", nil], ["last_name", nil], ["email", "thomas@example.com"], ["age", nil], ["description", nil], ["city_id", nil], ["created_at", "2024-05-02 10:16:08.008785"], ["updated_at", "2024-05-02 10:16:08.008785"], ["password_digest", "[FILTERED]"]]
+  ↳ app/controllers/users_controller.rb:12:in `create'
+  [1m[36mTRANSACTION (8.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:12:in `create'
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 217ms (ActiveRecord: 10.0ms | Allocations: 4116)
+
+
+Started GET "/" for 127.0.0.1 at 2024-05-02 12:16:08 +0200
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/welcome/index.html.erb:24
+  [1m[36mGossip Load (0.3ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" WHERE "gossips"."user_id" IN ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12)[0m  [["user_id", 1], ["user_id", 2], ["user_id", 3], ["user_id", 4], ["user_id", 5], ["user_id", 6], ["user_id", 7], ["user_id", 8], ["user_id", 9], ["user_id", 10], ["user_id", 11], ["user_id", 12]]
+  ↳ app/views/welcome/index.html.erb:24
+  Rendered welcome/index.html.erb within layouts/application (Duration: 7.7ms | Allocations: 5634)
+  Rendered layout layouts/application.html.erb (Duration: 8.9ms | Allocations: 6088)
+Completed 200 OK in 10ms (Views: 8.5ms | ActiveRecord: 1.0ms | Allocations: 6370)
+
+
+Started GET "/gossips/new" for 127.0.0.1 at 2024-05-02 12:16:12 +0200
+Processing by GossipsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering gossips/new.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."first_name" = $1 LIMIT $2[0m  [["first_name", "Anonyme"], ["LIMIT", 1]]
+  ↳ app/views/gossips/new.html.erb:28
+  Rendered gossips/new.html.erb within layouts/application (Duration: 4.6ms | Allocations: 2324)
+  Rendered layout layouts/application.html.erb (Duration: 5.5ms | Allocations: 2769)
+Completed 200 OK in 8ms (Views: 5.9ms | ActiveRecord: 0.5ms | Allocations: 3949)
+
+
+Started POST "/gossips" for 127.0.0.1 at 2024-05-02 12:16:18 +0200
+Processing by GossipsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "gossip"=>{"title"=>"Test", "description"=>"Wooow", "user_id"=>""}, "commit"=>"Submit"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/gossips_controller.rb:22:in `create'
+  [1m[36mGossip Create (1.2ms)[0m  [1m[32mINSERT INTO "gossips" ("title", "description", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Test"], ["description", "Wooow"], ["user_id", 12], ["created_at", "2024-05-02 10:16:18.861129"], ["updated_at", "2024-05-02 10:16:18.861129"]]
+  ↳ app/controllers/gossips_controller.rb:22:in `create'
+  [1m[36mTRANSACTION (8.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/gossips_controller.rb:22:in `create'
+Redirected to http://127.0.0.1:3000/gossips/22
+Completed 302 Found in 15ms (ActiveRecord: 10.4ms | Allocations: 2883)
+
+
+Started GET "/gossips/22" for 127.0.0.1 at 2024-05-02 12:16:18 +0200
+Processing by GossipsController#show as HTML
+  Parameters: {"id"=>"22"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mGossip Load (0.3ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" WHERE "gossips"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/gossips_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering gossips/show.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/gossips/show.html.erb:9
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."gossip_id" = $1[0m  [["gossip_id", 22]]
+  ↳ app/views/gossips/show.html.erb:22
+  Rendered gossips/show.html.erb within layouts/application (Duration: 12.4ms | Allocations: 5453)
+  Rendered layout layouts/application.html.erb (Duration: 13.0ms | Allocations: 5891)
+Completed 200 OK in 35ms (Views: 12.2ms | ActiveRecord: 4.2ms | Allocations: 13366)
+
+
+Started GET "/gossips/22/edit" for 127.0.0.1 at 2024-05-02 12:16:22 +0200
+Processing by GossipsController#edit as HTML
+  Parameters: {"id"=>"22"}
+  [1m[36mGossip Load (0.8ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" WHERE "gossips"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/gossips_controller.rb:58:in `require_creator'
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/gossips_controller.rb:59:in `require_creator'
+  [1m[36mCACHE Gossip Load (0.0ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" WHERE "gossips"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/gossips_controller.rb:31:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering gossips/edit.html.erb within layouts/application
+  Rendered gossips/edit.html.erb within layouts/application (Duration: 5.5ms | Allocations: 811)
+  Rendered layout layouts/application.html.erb (Duration: 9.1ms | Allocations: 1249)
+Completed 200 OK in 29ms (Views: 10.3ms | ActiveRecord: 1.6ms | Allocations: 3339)
+
+
+Started GET "/gossips/22/comments/new" for 127.0.0.1 at 2024-05-02 12:16:26 +0200
+Processing by CommentsController#new as HTML
+  Parameters: {"gossip_id"=>"22"}
+  [1m[36mGossip Load (0.6ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" WHERE "gossips"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/comments_controller.rb:15:in `new'
+  Rendering layout layouts/application.html.erb
+  Rendering comments/new.html.erb within layouts/application
+  Rendered comments/new.html.erb within layouts/application (Duration: 4.1ms | Allocations: 740)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 10.1ms | Allocations: 1596)
+Completed 200 OK in 18ms (Views: 12.8ms | ActiveRecord: 1.2ms | Allocations: 2551)
+
+
+Started DELETE "/gossips/22" for 127.0.0.1 at 2024-05-02 12:16:31 +0200
+Processing by GossipsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"22"}
+  [1m[36mGossip Load (0.6ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" WHERE "gossips"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/gossips_controller.rb:58:in `require_creator'
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/gossips_controller.rb:59:in `require_creator'
+  [1m[36mCACHE Gossip Load (0.0ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" WHERE "gossips"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/gossips_controller.rb:44:in `destroy'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/gossips_controller.rb:45:in `destroy'
+  [1m[36mGossip Destroy (3.6ms)[0m  [1m[31mDELETE FROM "gossips" WHERE "gossips"."id" = $1[0m  [["id", 22]]
+  ↳ app/controllers/gossips_controller.rb:45:in `destroy'
+  [1m[36mTRANSACTION (3.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/gossips_controller.rb:45:in `destroy'
+Redirected to http://127.0.0.1:3000/gossips
+Completed 302 Found in 21ms (ActiveRecord: 8.4ms | Allocations: 3173)
+
+
+Started GET "/gossips" for 127.0.0.1 at 2024-05-02 12:16:31 +0200
+Processing by GossipsController#index as HTML
+Redirected to http://127.0.0.1:3000/welcome/Thomas
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 214)
+
+
+Started GET "/welcome/Thomas" for 127.0.0.1 at 2024-05-02 12:16:31 +0200
+Processing by WelcomeController#index as HTML
+  Parameters: {"first_name"=>"Thomas"}
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/welcome/index.html.erb:24
+  [1m[36mGossip Load (0.4ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" WHERE "gossips"."user_id" IN ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12)[0m  [["user_id", 1], ["user_id", 2], ["user_id", 3], ["user_id", 4], ["user_id", 5], ["user_id", 6], ["user_id", 7], ["user_id", 8], ["user_id", 9], ["user_id", 10], ["user_id", 11], ["user_id", 12]]
+  ↳ app/views/welcome/index.html.erb:24
+  Rendered welcome/index.html.erb within layouts/application (Duration: 8.0ms | Allocations: 3535)
+  Rendered layout layouts/application.html.erb (Duration: 9.2ms | Allocations: 3973)
+Completed 200 OK in 11ms (Views: 8.9ms | ActiveRecord: 1.0ms | Allocations: 4255)
+
+
