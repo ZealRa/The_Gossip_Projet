@@ -3,6 +3,11 @@ require "faker"
 User.destroy_all
 Gossip.destroy_all
 
+def generate_password
+    charset = Array('A'..'Z') + Array('a'..'z') + Array('0'..'9')
+    Array.new(6) { charset.sample }.join
+end
+
 #créer 10 villes aléatoires
 cities = []
 10.times do
@@ -18,7 +23,8 @@ users = []
     last_name: Faker::Name.last_name,
     description: Faker::Lorem.paragraph(sentence_count:5),
     email: Faker::Internet.email,
-    age: Faker::Number.between(from: 13, to: 60)
+    age: Faker::Number.between(from: 13, to: 60),
+    password: generate_password
     )
 
     users << user

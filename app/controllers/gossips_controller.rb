@@ -14,7 +14,7 @@ class GossipsController < ApplicationController
 
   def create
     @gossip = Gossip.new(gossip_params)
-    @gossip.user = User.find_or_create_by(first_name: "Anonyme") # Créer un utilisateur anonyme s'il n'existe pas déjà
+    @gossip.user = current_user if current_user # Associer le potin à l'utilisateur connecté s'il existe
     if @gossip.save
       redirect_to @gossip, notice: "Le potin a été enregistré avec succès !"
     else

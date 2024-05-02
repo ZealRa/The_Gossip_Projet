@@ -1,17 +1,24 @@
+<!-- app/views/sessions/new.html.erb -->
 <h1>Connexion</h1>
 
-<%= form_for @user, url: sessions_path do |f| %>
+<%= form_with(url: login_path, method: "post") do |form| %>
+  <% if flash[:alert] %>
+    <div class="alert alert-danger">
+      <%= flash[:alert] %>
+    </div>
+  <% end %>
+
   <div>
-    <%= f.label :email %>
-    <%= f.email_field :email %>
+    <%= form.label :email %>
+    <%= form.email_field :email %>
   </div>
 
   <div>
-    <%= f.label :password %>
-    <%= f.password_field :password %>
+    <%= form.label :password %>
+    <%= form.password_field :password %>
   </div>
 
   <div>
-    <%= f.submit "Se connecter" %>
+    <%= form.submit "Se connecter" %>
   </div>
 <% end %>

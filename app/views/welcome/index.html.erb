@@ -4,16 +4,19 @@
 <body>
 
 <div class="container">
-  <h1>Bienvenue <%= @first_name %> !</h1>
+  <% if current_user %>
+    <h1>Bienvenue <%= current_user.email %> !</h1>
+  <% else %>
+    <h1>Bienvenue</h1>
+  <% end %>
 
   <% if flash[:success] %>
-  <div class="alert alert-success">
-    <%= flash[:success] %>
-  </div>
-<% end %>
+    <div class="alert alert-success">
+      <%= flash[:success] %>
+    </div>
+  <% end %>
 
-
-  <p> C'est notre giga site de potins !</p>
+  <p>C'est notre giga site de potins !</p>
 
   <%= link_to "Créer un nouveau potin", new_gossip_path, class: "btn btn-primary" %>
 
@@ -33,5 +36,3 @@
     <% end %>
   </div>
 </div>
-
-</body>

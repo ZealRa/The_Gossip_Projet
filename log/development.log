@@ -14384,3 +14384,1736 @@ Migrating to AddPasswordDigestToUsers (20240502070839)
   [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
   [1m[36mCity Create (2.9ms)[0m  [1m[32mINSERT INTO "cities" ("name", "zip_code", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "East Maia"], ["zip_code", 1344], ["created_at", "2024-05-02 07:16:39.566045"], ["updated_at", "2024-05-02 07:16:39.566045"]]
   [1m[36mTRANSACTION (2.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mGossip Load (0.3ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips"[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCity Create (1.3ms)[0m  [1m[32mINSERT INTO "cities" ("name", "zip_code", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Tameraburgh"], ["zip_code", 74243], ["created_at", "2024-05-02 07:22:01.778288"], ["updated_at", "2024-05-02 07:22:01.778288"]]
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCity Create (1.0ms)[0m  [1m[32mINSERT INTO "cities" ("name", "zip_code", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "South Noelland"], ["zip_code", 68609], ["created_at", "2024-05-02 07:22:01.783968"], ["updated_at", "2024-05-02 07:22:01.783968"]]
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCity Create (1.1ms)[0m  [1m[32mINSERT INTO "cities" ("name", "zip_code", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Brownchester"], ["zip_code", 60911], ["created_at", "2024-05-02 07:22:01.788409"], ["updated_at", "2024-05-02 07:22:01.788409"]]
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCity Create (1.1ms)[0m  [1m[32mINSERT INTO "cities" ("name", "zip_code", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Port Dominiquebury"], ["zip_code", 76768], ["created_at", "2024-05-02 07:22:01.793095"], ["updated_at", "2024-05-02 07:22:01.793095"]]
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCity Create (1.0ms)[0m  [1m[32mINSERT INTO "cities" ("name", "zip_code", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Schoenborough"], ["zip_code", 40804], ["created_at", "2024-05-02 07:22:01.797633"], ["updated_at", "2024-05-02 07:22:01.797633"]]
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCity Create (1.0ms)[0m  [1m[32mINSERT INTO "cities" ("name", "zip_code", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Rolandohaven"], ["zip_code", 5310], ["created_at", "2024-05-02 07:22:01.801992"], ["updated_at", "2024-05-02 07:22:01.801992"]]
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCity Create (1.5ms)[0m  [1m[32mINSERT INTO "cities" ("name", "zip_code", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Earlenehaven"], ["zip_code", 33296], ["created_at", "2024-05-02 07:22:01.806877"], ["updated_at", "2024-05-02 07:22:01.806877"]]
+  [1m[36mTRANSACTION (1.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCity Create (1.5ms)[0m  [1m[32mINSERT INTO "cities" ("name", "zip_code", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "West Pamila"], ["zip_code", 48883], ["created_at", "2024-05-02 07:22:01.812758"], ["updated_at", "2024-05-02 07:22:01.812758"]]
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCity Create (1.2ms)[0m  [1m[32mINSERT INTO "cities" ("name", "zip_code", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Georgeannafort"], ["zip_code", 37789], ["created_at", "2024-05-02 07:22:01.818017"], ["updated_at", "2024-05-02 07:22:01.818017"]]
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCity Create (1.1ms)[0m  [1m[32mINSERT INTO "cities" ("name", "zip_code", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Donovanville"], ["zip_code", 1871], ["created_at", "2024-05-02 07:22:01.822910"], ["updated_at", "2024-05-02 07:22:01.822910"]]
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (1.6ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "age", "description", "city_id", "created_at", "updated_at", "password_digest") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["first_name", "Clay"], ["last_name", "Schuppe"], ["email", "gregory.hickle@barton.test"], ["age", 57], ["description", 0], ["city_id", nil], ["created_at", "2024-05-02 07:22:02.031246"], ["updated_at", "2024-05-02 07:22:02.031246"], ["password_digest", "[FILTERED]"]]
+  [1m[36mTRANSACTION (2.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Update (1.3ms)[0m  [1m[33mUPDATE "users" SET "city_id" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["city_id", 20], ["updated_at", "2024-05-02 07:22:02.039864"], ["id", 1]]
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (1.2ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "age", "description", "city_id", "created_at", "updated_at", "password_digest") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["first_name", "Zoe"], ["last_name", "Treutel"], ["email", "marilee@gutmann.example"], ["age", 42], ["description", 0], ["city_id", nil], ["created_at", "2024-05-02 07:22:02.224823"], ["updated_at", "2024-05-02 07:22:02.224823"], ["password_digest", "[FILTERED]"]]
+  [1m[36mTRANSACTION (1.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Update (1.1ms)[0m  [1m[33mUPDATE "users" SET "city_id" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["city_id", 18], ["updated_at", "2024-05-02 07:22:02.230075"], ["id", 2]]
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (1.3ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "age", "description", "city_id", "created_at", "updated_at", "password_digest") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["first_name", "Annie"], ["last_name", "Schoen"], ["email", "devon@breitenberg.example"], ["age", 27], ["description", 0], ["city_id", nil], ["created_at", "2024-05-02 07:22:02.427417"], ["updated_at", "2024-05-02 07:22:02.427417"], ["password_digest", "[FILTERED]"]]
+  [1m[36mTRANSACTION (2.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Update (1.1ms)[0m  [1m[33mUPDATE "users" SET "city_id" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["city_id", 13], ["updated_at", "2024-05-02 07:22:02.432965"], ["id", 3]]
+  [1m[36mTRANSACTION (2.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (1.2ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "age", "description", "city_id", "created_at", "updated_at", "password_digest") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["first_name", "Milan"], ["last_name", "Ernser"], ["email", "kayla@walker.test"], ["age", 17], ["description", 0], ["city_id", nil], ["created_at", "2024-05-02 07:22:02.616978"], ["updated_at", "2024-05-02 07:22:02.616978"], ["password_digest", "[FILTERED]"]]
+  [1m[36mTRANSACTION (1.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Update (1.1ms)[0m  [1m[33mUPDATE "users" SET "city_id" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["city_id", 13], ["updated_at", "2024-05-02 07:22:02.622824"], ["id", 4]]
+  [1m[36mTRANSACTION (1.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (1.1ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "age", "description", "city_id", "created_at", "updated_at", "password_digest") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["first_name", "Antoine"], ["last_name", "Haley"], ["email", "karma@weissnat.example"], ["age", 21], ["description", 0], ["city_id", nil], ["created_at", "2024-05-02 07:22:02.808519"], ["updated_at", "2024-05-02 07:22:02.808519"], ["password_digest", "[FILTERED]"]]
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Update (1.0ms)[0m  [1m[33mUPDATE "users" SET "city_id" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["city_id", 11], ["updated_at", "2024-05-02 07:22:02.812928"], ["id", 5]]
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (1.3ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "age", "description", "city_id", "created_at", "updated_at", "password_digest") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["first_name", "Bret"], ["last_name", "Keebler"], ["email", "rolf.mante@goyette-mitchell.test"], ["age", 42], ["description", 0], ["city_id", nil], ["created_at", "2024-05-02 07:22:03.000671"], ["updated_at", "2024-05-02 07:22:03.000671"], ["password_digest", "[FILTERED]"]]
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Update (1.1ms)[0m  [1m[33mUPDATE "users" SET "city_id" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["city_id", 17], ["updated_at", "2024-05-02 07:22:03.005751"], ["id", 6]]
+  [1m[36mTRANSACTION (2.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (1.4ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "age", "description", "city_id", "created_at", "updated_at", "password_digest") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["first_name", "Johnathan"], ["last_name", "Borer"], ["email", "danilo@tillman.example"], ["age", 44], ["description", 0], ["city_id", nil], ["created_at", "2024-05-02 07:22:03.190626"], ["updated_at", "2024-05-02 07:22:03.190626"], ["password_digest", "[FILTERED]"]]
+  [1m[36mTRANSACTION (2.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Update (1.1ms)[0m  [1m[33mUPDATE "users" SET "city_id" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["city_id", 17], ["updated_at", "2024-05-02 07:22:03.196233"], ["id", 7]]
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (1.1ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "age", "description", "city_id", "created_at", "updated_at", "password_digest") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["first_name", "Erich"], ["last_name", "Jenkins"], ["email", "rolland@wolff.example"], ["age", 35], ["description", 0], ["city_id", nil], ["created_at", "2024-05-02 07:22:03.381720"], ["updated_at", "2024-05-02 07:22:03.381720"], ["password_digest", "[FILTERED]"]]
+  [1m[36mTRANSACTION (1.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Update (1.2ms)[0m  [1m[33mUPDATE "users" SET "city_id" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["city_id", 12], ["updated_at", "2024-05-02 07:22:03.386848"], ["id", 8]]
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (1.4ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "age", "description", "city_id", "created_at", "updated_at", "password_digest") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["first_name", "Walker"], ["last_name", "Pouros"], ["email", "thad_schaefer@murray.test"], ["age", 16], ["description", 0], ["city_id", nil], ["created_at", "2024-05-02 07:22:03.582405"], ["updated_at", "2024-05-02 07:22:03.582405"], ["password_digest", "[FILTERED]"]]
+  [1m[36mTRANSACTION (2.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Update (1.1ms)[0m  [1m[33mUPDATE "users" SET "city_id" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["city_id", 18], ["updated_at", "2024-05-02 07:22:03.587691"], ["id", 9]]
+  [1m[36mTRANSACTION (1.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (1.2ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "age", "description", "city_id", "created_at", "updated_at", "password_digest") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["first_name", "Samara"], ["last_name", "Hegmann"], ["email", "johnnie@oreilly.example"], ["age", 48], ["description", 0], ["city_id", nil], ["created_at", "2024-05-02 07:22:03.771351"], ["updated_at", "2024-05-02 07:22:03.771351"], ["password_digest", "[FILTERED]"]]
+  [1m[36mTRANSACTION (1.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Update (1.1ms)[0m  [1m[33mUPDATE "users" SET "city_id" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["city_id", 16], ["updated_at", "2024-05-02 07:22:03.776430"], ["id", 10]]
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mGossip Create (1.2ms)[0m  [1m[32mINSERT INTO "gossips" ("title", "description", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "b10w0es7nn61"], ["description", "Hic maxime fugiat. Labore ea deserunt. Quos molestias laborum. Et et et. Quia vel eos."], ["user_id", 6], ["created_at", "2024-05-02 07:22:03.793708"], ["updated_at", "2024-05-02 07:22:03.793708"]]
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mGossip Create (1.0ms)[0m  [1m[32mINSERT INTO "gossips" ("title", "description", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "fql"], ["description", "Ut quis vel. Sed quia ad. Cupiditate omnis doloremque. Quia sit necessitatibus. Voluptatem adipisci repellat."], ["user_id", 9], ["created_at", "2024-05-02 07:22:03.799016"], ["updated_at", "2024-05-02 07:22:03.799016"]]
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mGossip Create (0.9ms)[0m  [1m[32mINSERT INTO "gossips" ("title", "description", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "jsb"], ["description", "Alias sed suscipit. Asperiores rerum eveniet. Et praesentium et. Voluptatum facere quod. Qui modi assumenda."], ["user_id", 10], ["created_at", "2024-05-02 07:22:03.803963"], ["updated_at", "2024-05-02 07:22:03.803963"]]
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mGossip Create (1.7ms)[0m  [1m[32mINSERT INTO "gossips" ("title", "description", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "p0z"], ["description", "Eos recusandae quos. Occaecati aliquam quae. Similique hic quo. Iusto explicabo veritatis. Debitis sit sint."], ["user_id", 3], ["created_at", "2024-05-02 07:22:03.808470"], ["updated_at", "2024-05-02 07:22:03.808470"]]
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mGossip Create (0.9ms)[0m  [1m[32mINSERT INTO "gossips" ("title", "description", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "51prm9hlv"], ["description", "Ut eum atque. Praesentium fuga natus. Labore facere qui. Quis ut ut. Maxime dolor non."], ["user_id", 5], ["created_at", "2024-05-02 07:22:03.813749"], ["updated_at", "2024-05-02 07:22:03.813749"]]
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mGossip Create (1.0ms)[0m  [1m[32mINSERT INTO "gossips" ("title", "description", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "ivttn1921iuoj"], ["description", "Mollitia alias molestiae. Aut molestias quam. Et harum perspiciatis. Tenetur repellendus hic. Ex voluptatibus in."], ["user_id", 4], ["created_at", "2024-05-02 07:22:03.818236"], ["updated_at", "2024-05-02 07:22:03.818236"]]
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mGossip Create (1.0ms)[0m  [1m[32mINSERT INTO "gossips" ("title", "description", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "5qfckejh"], ["description", "Ipsum qui id. Ad consequuntur nobis. Omnis facere rerum. Laboriosam et eum. Ducimus tenetur voluptatem."], ["user_id", 10], ["created_at", "2024-05-02 07:22:03.823120"], ["updated_at", "2024-05-02 07:22:03.823120"]]
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mGossip Create (1.0ms)[0m  [1m[32mINSERT INTO "gossips" ("title", "description", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "bnpq1k"], ["description", "Sint vitae sunt. Eveniet non voluptas. Dolor ex dolores. Voluptas et quo. Aut enim sunt."], ["user_id", 3], ["created_at", "2024-05-02 07:22:03.828031"], ["updated_at", "2024-05-02 07:22:03.828031"]]
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mGossip Create (1.0ms)[0m  [1m[32mINSERT INTO "gossips" ("title", "description", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "42u"], ["description", "Nisi vel assumenda. Assumenda maiores dolores. Molestias omnis explicabo. A rerum sed. Commodi ut odio."], ["user_id", 2], ["created_at", "2024-05-02 07:22:03.832570"], ["updated_at", "2024-05-02 07:22:03.832570"]]
+  [1m[36mTRANSACTION (2.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mGossip Create (1.1ms)[0m  [1m[32mINSERT INTO "gossips" ("title", "description", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "cynnjdmzei9"], ["description", "Velit similique minus. Quis magni autem. Nemo deleniti dolor. Labore sint exercitationem. Veniam fugit in."], ["user_id", 3], ["created_at", "2024-05-02 07:22:03.838041"], ["updated_at", "2024-05-02 07:22:03.838041"]]
+  [1m[36mTRANSACTION (1.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mGossip Create (1.1ms)[0m  [1m[32mINSERT INTO "gossips" ("title", "description", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "ewg1zz91dv81"], ["description", "Tempore dicta provident. Animi tempore est. Iure eligendi repellendus. Doloribus rerum maiores. Distinctio aliquam inventore."], ["user_id", 1], ["created_at", "2024-05-02 07:22:03.843299"], ["updated_at", "2024-05-02 07:22:03.843299"]]
+  [1m[36mTRANSACTION (2.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mGossip Create (1.1ms)[0m  [1m[32mINSERT INTO "gossips" ("title", "description", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "e86mx7y7"], ["description", "Magni necessitatibus iure. Rerum et commodi. Culpa nemo aut. Totam doloribus reiciendis. Nihil non at."], ["user_id", 4], ["created_at", "2024-05-02 07:22:03.848618"], ["updated_at", "2024-05-02 07:22:03.848618"]]
+  [1m[36mTRANSACTION (2.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mGossip Create (1.1ms)[0m  [1m[32mINSERT INTO "gossips" ("title", "description", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "5kyjzpb5yp3"], ["description", "Illum voluptatem animi. Modi assumenda voluptatem. Esse perferendis blanditiis. Similique eligendi quia. Sequi aspernatur at."], ["user_id", 1], ["created_at", "2024-05-02 07:22:03.854065"], ["updated_at", "2024-05-02 07:22:03.854065"]]
+  [1m[36mTRANSACTION (1.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mGossip Create (1.1ms)[0m  [1m[32mINSERT INTO "gossips" ("title", "description", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "8nx8cnpw"], ["description", "Ipsam sunt fuga. Illo harum aliquam. Laboriosam qui et. Laborum magnam rerum. Assumenda quo fuga."], ["user_id", 9], ["created_at", "2024-05-02 07:22:03.859254"], ["updated_at", "2024-05-02 07:22:03.859254"]]
+  [1m[36mTRANSACTION (2.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mGossip Create (1.1ms)[0m  [1m[32mINSERT INTO "gossips" ("title", "description", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "1x0"], ["description", "Debitis quas optio. Omnis tempora aliquid. Ipsam nihil nobis. Nostrum magnam et. Distinctio quos sunt."], ["user_id", 4], ["created_at", "2024-05-02 07:22:03.864630"], ["updated_at", "2024-05-02 07:22:03.864630"]]
+  [1m[36mTRANSACTION (2.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mGossip Create (1.2ms)[0m  [1m[32mINSERT INTO "gossips" ("title", "description", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "ff5kbm3wcefp"], ["description", "Facilis non aut. Sint nisi voluptates. Minima voluptatum porro. Natus et quis. Sunt qui quae."], ["user_id", 9], ["created_at", "2024-05-02 07:22:03.870186"], ["updated_at", "2024-05-02 07:22:03.870186"]]
+  [1m[36mTRANSACTION (2.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mGossip Create (1.1ms)[0m  [1m[32mINSERT INTO "gossips" ("title", "description", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "v33f"], ["description", "Laudantium necessitatibus sequi. Rerum nobis quis. Nisi aspernatur aut. Tenetur sit ab. Nobis voluptate in."], ["user_id", 8], ["created_at", "2024-05-02 07:22:03.877161"], ["updated_at", "2024-05-02 07:22:03.877161"]]
+  [1m[36mTRANSACTION (1.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mGossip Create (1.1ms)[0m  [1m[32mINSERT INTO "gossips" ("title", "description", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "zedr6nzag"], ["description", "Porro quis facere. Qui libero et. Corrupti sunt illo. Itaque molestiae ad. Occaecati soluta aut."], ["user_id", 10], ["created_at", "2024-05-02 07:22:03.883031"], ["updated_at", "2024-05-02 07:22:03.883031"]]
+  [1m[36mTRANSACTION (2.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mGossip Create (1.1ms)[0m  [1m[32mINSERT INTO "gossips" ("title", "description", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "lxs8r"], ["description", "Consequatur dolores provident. Dolor expedita optio. Ut ipsam ut. Consequuntur eveniet consequatur. Nulla natus placeat."], ["user_id", 7], ["created_at", "2024-05-02 07:22:03.888818"], ["updated_at", "2024-05-02 07:22:03.888818"]]
+  [1m[36mTRANSACTION (2.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mGossip Create (1.1ms)[0m  [1m[32mINSERT INTO "gossips" ("title", "description", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "xgdn9"], ["description", "Debitis laudantium provident. Earum voluptatem dolores. Dolore quia sed. Numquam quam est. Qui omnis delectus."], ["user_id", 5], ["created_at", "2024-05-02 07:22:03.894578"], ["updated_at", "2024-05-02 07:22:03.894578"]]
+  [1m[36mTRANSACTION (1.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTag Create (1.2ms)[0m  [1m[32mINSERT INTO "tags" ("name", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "[\"ipsam\"]"], ["user_id", 5], ["created_at", "2024-05-02 07:22:03.908628"], ["updated_at", "2024-05-02 07:22:03.908628"]]
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTag Create (1.1ms)[0m  [1m[32mINSERT INTO "tags" ("name", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "[\"omnis\"]"], ["user_id", 6], ["created_at", "2024-05-02 07:22:03.913474"], ["updated_at", "2024-05-02 07:22:03.913474"]]
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTag Create (1.0ms)[0m  [1m[32mINSERT INTO "tags" ("name", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "[\"eveniet\"]"], ["user_id", 6], ["created_at", "2024-05-02 07:22:03.917526"], ["updated_at", "2024-05-02 07:22:03.917526"]]
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTag Create (1.0ms)[0m  [1m[32mINSERT INTO "tags" ("name", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "[\"sed\"]"], ["user_id", 3], ["created_at", "2024-05-02 07:22:03.921825"], ["updated_at", "2024-05-02 07:22:03.921825"]]
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTag Create (0.9ms)[0m  [1m[32mINSERT INTO "tags" ("name", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "[\"at\"]"], ["user_id", 9], ["created_at", "2024-05-02 07:22:03.925758"], ["updated_at", "2024-05-02 07:22:03.925758"]]
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTag Create (0.9ms)[0m  [1m[32mINSERT INTO "tags" ("name", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "[\"corrupti\"]"], ["user_id", 10], ["created_at", "2024-05-02 07:22:03.929756"], ["updated_at", "2024-05-02 07:22:03.929756"]]
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTag Create (1.2ms)[0m  [1m[32mINSERT INTO "tags" ("name", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "[\"saepe\"]"], ["user_id", 10], ["created_at", "2024-05-02 07:22:03.933671"], ["updated_at", "2024-05-02 07:22:03.933671"]]
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTag Create (0.9ms)[0m  [1m[32mINSERT INTO "tags" ("name", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "[\"molestias\"]"], ["user_id", 7], ["created_at", "2024-05-02 07:22:03.937803"], ["updated_at", "2024-05-02 07:22:03.937803"]]
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTag Create (0.9ms)[0m  [1m[32mINSERT INTO "tags" ("name", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "[\"quas\"]"], ["user_id", 1], ["created_at", "2024-05-02 07:22:03.941615"], ["updated_at", "2024-05-02 07:22:03.941615"]]
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTag Create (0.9ms)[0m  [1m[32mINSERT INTO "tags" ("name", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "[\"ea\"]"], ["user_id", 6], ["created_at", "2024-05-02 07:22:03.945801"], ["updated_at", "2024-05-02 07:22:03.945801"]]
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mGossipTag Create (3.2ms)[0m  [1m[32mINSERT INTO "gossip_tags" ("gossip_id", "tag_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["gossip_id", 2], ["tag_id", 6], ["created_at", "2024-05-02 07:22:03.960204"], ["updated_at", "2024-05-02 07:22:03.960204"]]
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mGossipTag Create (0.9ms)[0m  [1m[32mINSERT INTO "gossip_tags" ("gossip_id", "tag_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["gossip_id", 18], ["tag_id", 6], ["created_at", "2024-05-02 07:22:03.966601"], ["updated_at", "2024-05-02 07:22:03.966601"]]
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mGossipTag Create (0.9ms)[0m  [1m[32mINSERT INTO "gossip_tags" ("gossip_id", "tag_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["gossip_id", 2], ["tag_id", 7], ["created_at", "2024-05-02 07:22:03.970332"], ["updated_at", "2024-05-02 07:22:03.970332"]]
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mGossipTag Create (0.9ms)[0m  [1m[32mINSERT INTO "gossip_tags" ("gossip_id", "tag_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["gossip_id", 4], ["tag_id", 5], ["created_at", "2024-05-02 07:22:03.974442"], ["updated_at", "2024-05-02 07:22:03.974442"]]
+  [1m[36mTRANSACTION (2.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mGossipTag Create (1.0ms)[0m  [1m[32mINSERT INTO "gossip_tags" ("gossip_id", "tag_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["gossip_id", 14], ["tag_id", 6], ["created_at", "2024-05-02 07:22:03.979009"], ["updated_at", "2024-05-02 07:22:03.979009"]]
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mGossipTag Create (1.3ms)[0m  [1m[32mINSERT INTO "gossip_tags" ("gossip_id", "tag_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["gossip_id", 10], ["tag_id", 1], ["created_at", "2024-05-02 07:22:03.983078"], ["updated_at", "2024-05-02 07:22:03.983078"]]
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mGossipTag Create (0.9ms)[0m  [1m[32mINSERT INTO "gossip_tags" ("gossip_id", "tag_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["gossip_id", 20], ["tag_id", 6], ["created_at", "2024-05-02 07:22:03.987244"], ["updated_at", "2024-05-02 07:22:03.987244"]]
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mGossipTag Create (0.9ms)[0m  [1m[32mINSERT INTO "gossip_tags" ("gossip_id", "tag_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["gossip_id", 16], ["tag_id", 9], ["created_at", "2024-05-02 07:22:03.990911"], ["updated_at", "2024-05-02 07:22:03.990911"]]
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mGossipTag Create (1.0ms)[0m  [1m[32mINSERT INTO "gossip_tags" ("gossip_id", "tag_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["gossip_id", 17], ["tag_id", 9], ["created_at", "2024-05-02 07:22:03.995348"], ["updated_at", "2024-05-02 07:22:03.995348"]]
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mGossipTag Create (0.9ms)[0m  [1m[32mINSERT INTO "gossip_tags" ("gossip_id", "tag_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["gossip_id", 13], ["tag_id", 3], ["created_at", "2024-05-02 07:22:03.999221"], ["updated_at", "2024-05-02 07:22:03.999221"]]
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMessage Create (1.3ms)[0m  [1m[32mINSERT INTO "messages" ("user_id", "message", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 7], ["message", "Odio aut hic. Officiis et velit. Aut deleniti quisquam. Recusandae nam labore. At eos cupiditate."], ["created_at", "2024-05-02 07:22:04.016818"], ["updated_at", "2024-05-02 07:22:04.016818"]]
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipient Create (1.2ms)[0m  [1m[32mINSERT INTO "recipients" ("user_id", "message_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 9], ["message_id", 1], ["created_at", "2024-05-02 07:22:04.030958"], ["updated_at", "2024-05-02 07:22:04.030958"]]
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMessage Create (0.9ms)[0m  [1m[32mINSERT INTO "messages" ("user_id", "message", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 9], ["message", "Delectus in est. Molestias quo animi. Nisi fugiat nobis. Quod rerum odio. Laborum quaerat quo."], ["created_at", "2024-05-02 07:22:04.036191"], ["updated_at", "2024-05-02 07:22:04.036191"]]
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipient Create (0.9ms)[0m  [1m[32mINSERT INTO "recipients" ("user_id", "message_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 3], ["message_id", 2], ["created_at", "2024-05-02 07:22:04.040258"], ["updated_at", "2024-05-02 07:22:04.040258"]]
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMessage Create (0.9ms)[0m  [1m[32mINSERT INTO "messages" ("user_id", "message", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 3], ["message", "Ullam aspernatur officia. Nemo ipsam nihil. Molestiae dolorem eum. Velit ut distinctio. Deleniti aut consequatur."], ["created_at", "2024-05-02 07:22:04.044637"], ["updated_at", "2024-05-02 07:22:04.044637"]]
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipient Create (1.0ms)[0m  [1m[32mINSERT INTO "recipients" ("user_id", "message_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 1], ["message_id", 3], ["created_at", "2024-05-02 07:22:04.050608"], ["updated_at", "2024-05-02 07:22:04.050608"]]
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMessage Create (1.6ms)[0m  [1m[32mINSERT INTO "messages" ("user_id", "message", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 9], ["message", "Libero aut velit. Voluptates dicta distinctio. Voluptas consequatur odit. Eos aut atque. Et itaque non."], ["created_at", "2024-05-02 07:22:04.054960"], ["updated_at", "2024-05-02 07:22:04.054960"]]
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipient Create (0.9ms)[0m  [1m[32mINSERT INTO "recipients" ("user_id", "message_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 5], ["message_id", 4], ["created_at", "2024-05-02 07:22:04.059541"], ["updated_at", "2024-05-02 07:22:04.059541"]]
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMessage Create (1.1ms)[0m  [1m[32mINSERT INTO "messages" ("user_id", "message", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 8], ["message", "Blanditiis repellendus qui. Amet est harum. Beatae et eum. Id sunt velit. Ducimus exercitationem quis."], ["created_at", "2024-05-02 07:22:04.064243"], ["updated_at", "2024-05-02 07:22:04.064243"]]
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipient Create (0.9ms)[0m  [1m[32mINSERT INTO "recipients" ("user_id", "message_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 4], ["message_id", 5], ["created_at", "2024-05-02 07:22:04.068293"], ["updated_at", "2024-05-02 07:22:04.068293"]]
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMessage Create (1.0ms)[0m  [1m[32mINSERT INTO "messages" ("user_id", "message", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 1], ["message", "Similique doloremque non. Eum iste repellendus. Odio unde est. Magnam dignissimos harum. Labore repellat quaerat."], ["created_at", "2024-05-02 07:22:04.073062"], ["updated_at", "2024-05-02 07:22:04.073062"]]
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipient Create (1.1ms)[0m  [1m[32mINSERT INTO "recipients" ("user_id", "message_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 8], ["message_id", 6], ["created_at", "2024-05-02 07:22:04.076908"], ["updated_at", "2024-05-02 07:22:04.076908"]]
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMessage Create (0.9ms)[0m  [1m[32mINSERT INTO "messages" ("user_id", "message", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 3], ["message", "Placeat officia vel. Aut laborum sed. Repellat ab debitis. Corrupti dolor incidunt. Reiciendis et sunt."], ["created_at", "2024-05-02 07:22:04.081358"], ["updated_at", "2024-05-02 07:22:04.081358"]]
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipient Create (0.9ms)[0m  [1m[32mINSERT INTO "recipients" ("user_id", "message_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 3], ["message_id", 7], ["created_at", "2024-05-02 07:22:04.085237"], ["updated_at", "2024-05-02 07:22:04.085237"]]
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMessage Create (0.9ms)[0m  [1m[32mINSERT INTO "messages" ("user_id", "message", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 10], ["message", "Eaque quia sit. Nobis necessitatibus accusantium. Dolores dicta beatae. Quia eligendi quas. Et dolor est."], ["created_at", "2024-05-02 07:22:04.089736"], ["updated_at", "2024-05-02 07:22:04.089736"]]
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipient Create (1.2ms)[0m  [1m[32mINSERT INTO "recipients" ("user_id", "message_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 5], ["message_id", 8], ["created_at", "2024-05-02 07:22:04.093664"], ["updated_at", "2024-05-02 07:22:04.093664"]]
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMessage Create (0.9ms)[0m  [1m[32mINSERT INTO "messages" ("user_id", "message", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 5], ["message", "Eligendi delectus laboriosam. Atque ad velit. Laborum velit ut. Alias et dolorum. Illo sed voluptatem."], ["created_at", "2024-05-02 07:22:04.098172"], ["updated_at", "2024-05-02 07:22:04.098172"]]
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipient Create (1.0ms)[0m  [1m[32mINSERT INTO "recipients" ("user_id", "message_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 9], ["message_id", 9], ["created_at", "2024-05-02 07:22:04.102211"], ["updated_at", "2024-05-02 07:22:04.102211"]]
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMessage Create (0.9ms)[0m  [1m[32mINSERT INTO "messages" ("user_id", "message", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 8], ["message", "Illo cum accusantium. Odit fugiat alias. Nam et voluptatem. Sunt reiciendis atque. Non libero totam."], ["created_at", "2024-05-02 07:22:04.106828"], ["updated_at", "2024-05-02 07:22:04.106828"]]
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipient Create (0.9ms)[0m  [1m[32mINSERT INTO "recipients" ("user_id", "message_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 1], ["message_id", 10], ["created_at", "2024-05-02 07:22:04.110668"], ["updated_at", "2024-05-02 07:22:04.110668"]]
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMessage Create (2.5ms)[0m  [1m[32mINSERT INTO "messages" ("user_id", "message", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 5], ["message", "Maiores perferendis quia. Perspiciatis expedita ratione. Labore laudantium molestiae. Explicabo voluptas tempora. Voluptatum aut nulla."], ["created_at", "2024-05-02 07:22:04.114857"], ["updated_at", "2024-05-02 07:22:04.114857"]]
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipient Create (1.2ms)[0m  [1m[32mINSERT INTO "recipients" ("user_id", "message_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 6], ["message_id", 11], ["created_at", "2024-05-02 07:22:04.121178"], ["updated_at", "2024-05-02 07:22:04.121178"]]
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMessage Create (1.4ms)[0m  [1m[32mINSERT INTO "messages" ("user_id", "message", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 1], ["message", "Ipsam est repellat. Aut est repellat. Est odio nihil. Eius nemo vel. Doloremque eius enim."], ["created_at", "2024-05-02 07:22:04.127046"], ["updated_at", "2024-05-02 07:22:04.127046"]]
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipient Create (1.2ms)[0m  [1m[32mINSERT INTO "recipients" ("user_id", "message_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 2], ["message_id", 12], ["created_at", "2024-05-02 07:22:04.132156"], ["updated_at", "2024-05-02 07:22:04.132156"]]
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMessage Create (0.9ms)[0m  [1m[32mINSERT INTO "messages" ("user_id", "message", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 3], ["message", "Ullam consectetur et. Officiis ad quisquam. Modi et quia. Occaecati illum rem. Quos voluptas quia."], ["created_at", "2024-05-02 07:22:04.137882"], ["updated_at", "2024-05-02 07:22:04.137882"]]
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipient Create (1.1ms)[0m  [1m[32mINSERT INTO "recipients" ("user_id", "message_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 8], ["message_id", 13], ["created_at", "2024-05-02 07:22:04.141938"], ["updated_at", "2024-05-02 07:22:04.141938"]]
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMessage Create (1.4ms)[0m  [1m[32mINSERT INTO "messages" ("user_id", "message", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 9], ["message", "Placeat eum quibusdam. Nisi atque aut. Sed ipsa qui. Voluptas aspernatur itaque. Quia unde quod."], ["created_at", "2024-05-02 07:22:04.147617"], ["updated_at", "2024-05-02 07:22:04.147617"]]
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipient Create (1.3ms)[0m  [1m[32mINSERT INTO "recipients" ("user_id", "message_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 2], ["message_id", 14], ["created_at", "2024-05-02 07:22:04.153229"], ["updated_at", "2024-05-02 07:22:04.153229"]]
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMessage Create (1.1ms)[0m  [1m[32mINSERT INTO "messages" ("user_id", "message", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 9], ["message", "Qui cumque officia. Velit asperiores provident. Dicta quidem ab. Deserunt rerum quia. Et optio autem."], ["created_at", "2024-05-02 07:22:04.158941"], ["updated_at", "2024-05-02 07:22:04.158941"]]
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipient Create (1.3ms)[0m  [1m[32mINSERT INTO "recipients" ("user_id", "message_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 5], ["message_id", 15], ["created_at", "2024-05-02 07:22:04.163220"], ["updated_at", "2024-05-02 07:22:04.163220"]]
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMessage Create (0.9ms)[0m  [1m[32mINSERT INTO "messages" ("user_id", "message", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 1], ["message", "Possimus quasi necessitatibus. Ex sit est. Quibusdam doloribus optio. Expedita amet dicta. Mollitia totam assumenda."], ["created_at", "2024-05-02 07:22:04.167862"], ["updated_at", "2024-05-02 07:22:04.167862"]]
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipient Create (0.9ms)[0m  [1m[32mINSERT INTO "recipients" ("user_id", "message_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 9], ["message_id", 16], ["created_at", "2024-05-02 07:22:04.172084"], ["updated_at", "2024-05-02 07:22:04.172084"]]
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMessage Create (1.9ms)[0m  [1m[32mINSERT INTO "messages" ("user_id", "message", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 3], ["message", "Aliquam debitis totam. Quis ea officiis. Sed exercitationem aut. Voluptatum praesentium fugit. Ut magnam quam."], ["created_at", "2024-05-02 07:22:04.176971"], ["updated_at", "2024-05-02 07:22:04.176971"]]
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipient Create (1.3ms)[0m  [1m[32mINSERT INTO "recipients" ("user_id", "message_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 6], ["message_id", 17], ["created_at", "2024-05-02 07:22:04.182543"], ["updated_at", "2024-05-02 07:22:04.182543"]]
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMessage Create (1.1ms)[0m  [1m[32mINSERT INTO "messages" ("user_id", "message", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 10], ["message", "Animi atque soluta. Voluptatum vel laboriosam. Numquam modi omnis. Veritatis sunt in. Corrupti labore deserunt."], ["created_at", "2024-05-02 07:22:04.188017"], ["updated_at", "2024-05-02 07:22:04.188017"]]
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipient Create (1.0ms)[0m  [1m[32mINSERT INTO "recipients" ("user_id", "message_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 6], ["message_id", 18], ["created_at", "2024-05-02 07:22:04.192344"], ["updated_at", "2024-05-02 07:22:04.192344"]]
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMessage Create (1.3ms)[0m  [1m[32mINSERT INTO "messages" ("user_id", "message", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 3], ["message", "Libero aut commodi. Facere dignissimos sequi. Quae ut omnis. Assumenda ut quam. Recusandae quae dolorum."], ["created_at", "2024-05-02 07:22:04.197779"], ["updated_at", "2024-05-02 07:22:04.197779"]]
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipient Create (1.5ms)[0m  [1m[32mINSERT INTO "recipients" ("user_id", "message_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 6], ["message_id", 19], ["created_at", "2024-05-02 07:22:04.202882"], ["updated_at", "2024-05-02 07:22:04.202882"]]
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMessage Create (0.9ms)[0m  [1m[32mINSERT INTO "messages" ("user_id", "message", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 10], ["message", "Quo enim sed. Id et quibusdam. Vero sit nisi. Provident architecto dolorem. Pariatur quod assumenda."], ["created_at", "2024-05-02 07:22:04.207805"], ["updated_at", "2024-05-02 07:22:04.207805"]]
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipient Create (0.9ms)[0m  [1m[32mINSERT INTO "recipients" ("user_id", "message_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 2], ["message_id", 20], ["created_at", "2024-05-02 07:22:04.212258"], ["updated_at", "2024-05-02 07:22:04.212258"]]
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMessage Create (2.0ms)[0m  [1m[32mINSERT INTO "messages" ("user_id", "message", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 4], ["message", "Odit placeat et. Id qui ut. Nihil ea dicta. Suscipit quis nulla. Quaerat expedita eius."], ["created_at", "2024-05-02 07:22:04.217180"], ["updated_at", "2024-05-02 07:22:04.217180"]]
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipient Create (1.4ms)[0m  [1m[32mINSERT INTO "recipients" ("user_id", "message_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 9], ["message_id", 21], ["created_at", "2024-05-02 07:22:04.223232"], ["updated_at", "2024-05-02 07:22:04.223232"]]
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMessage Create (1.1ms)[0m  [1m[32mINSERT INTO "messages" ("user_id", "message", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 6], ["message", "At excepturi aut. Sed quas non. Cum iure necessitatibus. Dolor qui possimus. Porro adipisci est."], ["created_at", "2024-05-02 07:22:04.229277"], ["updated_at", "2024-05-02 07:22:04.229277"]]
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipient Create (1.0ms)[0m  [1m[32mINSERT INTO "recipients" ("user_id", "message_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 4], ["message_id", 22], ["created_at", "2024-05-02 07:22:04.234073"], ["updated_at", "2024-05-02 07:22:04.234073"]]
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMessage Create (1.2ms)[0m  [1m[32mINSERT INTO "messages" ("user_id", "message", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 9], ["message", "Dolorem laborum optio. Neque et vel. Vel ipsa earum. Suscipit quos voluptate. Et facilis eaque."], ["created_at", "2024-05-02 07:22:04.238754"], ["updated_at", "2024-05-02 07:22:04.238754"]]
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipient Create (1.0ms)[0m  [1m[32mINSERT INTO "recipients" ("user_id", "message_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 4], ["message_id", 23], ["created_at", "2024-05-02 07:22:04.242949"], ["updated_at", "2024-05-02 07:22:04.242949"]]
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMessage Create (1.0ms)[0m  [1m[32mINSERT INTO "messages" ("user_id", "message", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 10], ["message", "Esse quisquam ad. Et est suscipit. Ad fugiat et. Maxime corporis aliquid. Nesciunt nam nisi."], ["created_at", "2024-05-02 07:22:04.247738"], ["updated_at", "2024-05-02 07:22:04.247738"]]
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipient Create (1.0ms)[0m  [1m[32mINSERT INTO "recipients" ("user_id", "message_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 3], ["message_id", 24], ["created_at", "2024-05-02 07:22:04.251749"], ["updated_at", "2024-05-02 07:22:04.251749"]]
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMessage Create (1.4ms)[0m  [1m[32mINSERT INTO "messages" ("user_id", "message", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 1], ["message", "Saepe tempora ut. Minima error porro. Quas totam eveniet. Non sit nulla. Repellat est laboriosam."], ["created_at", "2024-05-02 07:22:04.257363"], ["updated_at", "2024-05-02 07:22:04.257363"]]
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipient Create (1.3ms)[0m  [1m[32mINSERT INTO "recipients" ("user_id", "message_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 3], ["message_id", 25], ["created_at", "2024-05-02 07:22:04.262986"], ["updated_at", "2024-05-02 07:22:04.262986"]]
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipient Create (1.1ms)[0m  [1m[32mINSERT INTO "recipients" ("user_id", "message_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 2], ["message_id", 11], ["created_at", "2024-05-02 07:22:04.267649"], ["updated_at", "2024-05-02 07:22:04.267649"]]
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipient Create (2.2ms)[0m  [1m[32mINSERT INTO "recipients" ("user_id", "message_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 2], ["message_id", 25], ["created_at", "2024-05-02 07:22:04.271968"], ["updated_at", "2024-05-02 07:22:04.271968"]]
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipient Create (1.0ms)[0m  [1m[32mINSERT INTO "recipients" ("user_id", "message_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 3], ["message_id", 21], ["created_at", "2024-05-02 07:22:04.277282"], ["updated_at", "2024-05-02 07:22:04.277282"]]
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipient Create (0.9ms)[0m  [1m[32mINSERT INTO "recipients" ("user_id", "message_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 8], ["message_id", 15], ["created_at", "2024-05-02 07:22:04.281174"], ["updated_at", "2024-05-02 07:22:04.281174"]]
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipient Create (0.9ms)[0m  [1m[32mINSERT INTO "recipients" ("user_id", "message_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 8], ["message_id", 6], ["created_at", "2024-05-02 07:22:04.285536"], ["updated_at", "2024-05-02 07:22:04.285536"]]
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipient Create (1.0ms)[0m  [1m[32mINSERT INTO "recipients" ("user_id", "message_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 9], ["message_id", 20], ["created_at", "2024-05-02 07:22:04.289233"], ["updated_at", "2024-05-02 07:22:04.289233"]]
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipient Create (1.5ms)[0m  [1m[32mINSERT INTO "recipients" ("user_id", "message_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 9], ["message_id", 24], ["created_at", "2024-05-02 07:22:04.293169"], ["updated_at", "2024-05-02 07:22:04.293169"]]
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipient Create (1.0ms)[0m  [1m[32mINSERT INTO "recipients" ("user_id", "message_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 6], ["message_id", 17], ["created_at", "2024-05-02 07:22:04.297784"], ["updated_at", "2024-05-02 07:22:04.297784"]]
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipient Create (1.1ms)[0m  [1m[32mINSERT INTO "recipients" ("user_id", "message_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 10], ["message_id", 10], ["created_at", "2024-05-02 07:22:04.301996"], ["updated_at", "2024-05-02 07:22:04.301996"]]
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipient Create (1.2ms)[0m  [1m[32mINSERT INTO "recipients" ("user_id", "message_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 7], ["message_id", 3], ["created_at", "2024-05-02 07:22:04.307470"], ["updated_at", "2024-05-02 07:22:04.307470"]]
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipient Create (1.3ms)[0m  [1m[32mINSERT INTO "recipients" ("user_id", "message_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 10], ["message_id", 6], ["created_at", "2024-05-02 07:22:04.313013"], ["updated_at", "2024-05-02 07:22:04.313013"]]
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipient Create (1.0ms)[0m  [1m[32mINSERT INTO "recipients" ("user_id", "message_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 4], ["message_id", 23], ["created_at", "2024-05-02 07:22:04.318176"], ["updated_at", "2024-05-02 07:22:04.318176"]]
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipient Create (1.4ms)[0m  [1m[32mINSERT INTO "recipients" ("user_id", "message_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 9], ["message_id", 13], ["created_at", "2024-05-02 07:22:04.322615"], ["updated_at", "2024-05-02 07:22:04.322615"]]
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipient Create (1.0ms)[0m  [1m[32mINSERT INTO "recipients" ("user_id", "message_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 5], ["message_id", 7], ["created_at", "2024-05-02 07:22:04.327158"], ["updated_at", "2024-05-02 07:22:04.327158"]]
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipient Create (1.5ms)[0m  [1m[32mINSERT INTO "recipients" ("user_id", "message_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 5], ["message_id", 7], ["created_at", "2024-05-02 07:22:04.331408"], ["updated_at", "2024-05-02 07:22:04.331408"]]
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipient Create (2.3ms)[0m  [1m[32mINSERT INTO "recipients" ("user_id", "message_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 4], ["message_id", 5], ["created_at", "2024-05-02 07:22:04.336029"], ["updated_at", "2024-05-02 07:22:04.336029"]]
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipient Create (1.0ms)[0m  [1m[32mINSERT INTO "recipients" ("user_id", "message_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 10], ["message_id", 8], ["created_at", "2024-05-02 07:22:04.341264"], ["updated_at", "2024-05-02 07:22:04.341264"]]
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipient Create (1.2ms)[0m  [1m[32mINSERT INTO "recipients" ("user_id", "message_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 8], ["message_id", 14], ["created_at", "2024-05-02 07:22:04.346757"], ["updated_at", "2024-05-02 07:22:04.346757"]]
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipient Create (1.2ms)[0m  [1m[32mINSERT INTO "recipients" ("user_id", "message_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 5], ["message_id", 1], ["created_at", "2024-05-02 07:22:04.351203"], ["updated_at", "2024-05-02 07:22:04.351203"]]
+  [1m[36mTRANSACTION (2.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipient Create (2.4ms)[0m  [1m[32mINSERT INTO "recipients" ("user_id", "message_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 1], ["message_id", 12], ["created_at", "2024-05-02 07:22:04.357331"], ["updated_at", "2024-05-02 07:22:04.357331"]]
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipient Create (0.9ms)[0m  [1m[32mINSERT INTO "recipients" ("user_id", "message_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 10], ["message_id", 5], ["created_at", "2024-05-02 07:22:04.363357"], ["updated_at", "2024-05-02 07:22:04.363357"]]
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipient Create (1.0ms)[0m  [1m[32mINSERT INTO "recipients" ("user_id", "message_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 5], ["message_id", 4], ["created_at", "2024-05-02 07:22:04.367407"], ["updated_at", "2024-05-02 07:22:04.367407"]]
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipient Create (1.2ms)[0m  [1m[32mINSERT INTO "recipients" ("user_id", "message_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 2], ["message_id", 13], ["created_at", "2024-05-02 07:22:04.372143"], ["updated_at", "2024-05-02 07:22:04.372143"]]
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipient Create (0.9ms)[0m  [1m[32mINSERT INTO "recipients" ("user_id", "message_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 9], ["message_id", 1], ["created_at", "2024-05-02 07:22:04.376564"], ["updated_at", "2024-05-02 07:22:04.376564"]]
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipient Create (1.1ms)[0m  [1m[32mINSERT INTO "recipients" ("user_id", "message_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 10], ["message_id", 11], ["created_at", "2024-05-02 07:22:04.381070"], ["updated_at", "2024-05-02 07:22:04.381070"]]
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT "messages".* FROM "messages" INNER JOIN "recipients" ON "messages"."id" = "recipients"."message_id" WHERE "recipients"."user_id" = $1[0m  [["user_id", 6]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "recipients" ON "users"."id" = "recipients"."user_id" WHERE "recipients"."message_id" = $1[0m  [["message_id", 6]]
+Started GET "/" for 127.0.0.1 at 2024-05-02 09:22:14 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/welcome/index.html.erb:21
+  [1m[36mGossip Load (0.5ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" WHERE "gossips"."user_id" IN ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10)[0m  [["user_id", 1], ["user_id", 2], ["user_id", 3], ["user_id", 4], ["user_id", 5], ["user_id", 6], ["user_id", 7], ["user_id", 8], ["user_id", 9], ["user_id", 10]]
+  ↳ app/views/welcome/index.html.erb:21
+  Rendered welcome/index.html.erb within layouts/application (Duration: 70.0ms | Allocations: 30648)
+  Rendered layout layouts/application.html.erb (Duration: 71.6ms | Allocations: 31474)
+Completed 200 OK in 218ms (Views: 64.3ms | ActiveRecord: 10.4ms | Allocations: 326260)
+
+
+Started GET "/gossips/3" for 127.0.0.1 at 2024-05-02 09:22:22 +0200
+Processing by GossipsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mGossip Load (0.4ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" WHERE "gossips"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/gossips_controller.rb:3:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering gossips/show.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/gossips/show.html.erb:9
+  [1m[36mCity Load (0.3ms)[0m  [1m[34mSELECT "cities".* FROM "cities" WHERE "cities"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/views/gossips/show.html.erb:11
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."gossip_id" = $1[0m  [["gossip_id", 3]]
+  ↳ app/views/gossips/show.html.erb:22
+  Rendered gossips/show.html.erb within layouts/application (Duration: 23.0ms | Allocations: 11326)
+  Rendered layout layouts/application.html.erb (Duration: 23.6ms | Allocations: 11662)
+Completed 200 OK in 46ms (Views: 21.8ms | ActiveRecord: 5.1ms | Allocations: 19655)
+
+
+Started GET "/gossips/3/comments/new" for 127.0.0.1 at 2024-05-02 09:22:25 +0200
+Processing by CommentsController#new as HTML
+  Parameters: {"gossip_id"=>"3"}
+  [1m[36mGossip Load (0.4ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" WHERE "gossips"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/comments_controller.rb:15:in `new'
+  Rendering layout layouts/application.html.erb
+  Rendering comments/new.html.erb within layouts/application
+  Rendered comments/new.html.erb within layouts/application (Duration: 5.9ms | Allocations: 1233)
+  Rendered layout layouts/application.html.erb (Duration: 6.9ms | Allocations: 1569)
+Completed 200 OK in 12ms (Views: 8.1ms | ActiveRecord: 0.4ms | Allocations: 2537)
+
+
+Started POST "/gossips/3/comments" for 127.0.0.1 at 2024-05-02 09:22:30 +0200
+Processing by CommentsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "comment"=>{"text"=>"Waaaa", "gossip_id"=>"3"}, "commit"=>"Créer le commentaire", "gossip_id"=>"3"}
+  [1m[36mGossip Load (0.3ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" WHERE "gossips"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/comments_controller.rb:25:in `create'
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.3ms | Allocations: 2020)
+
+
+  
+NoMethodError (undefined method `anonymous_user' for User:Class):
+  
+app/controllers/comments_controller.rb:27:in `create'
+Started GET "/welcome/Jean-Mich" for 127.0.0.1 at 2024-05-02 09:25:45 +0200
+Processing by WelcomeController#index as HTML
+  Parameters: {"first_name"=>"Jean-Mich"}
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/welcome/index.html.erb:21
+  [1m[36mGossip Load (0.3ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" WHERE "gossips"."user_id" IN ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10)[0m  [["user_id", 1], ["user_id", 2], ["user_id", 3], ["user_id", 4], ["user_id", 5], ["user_id", 6], ["user_id", 7], ["user_id", 8], ["user_id", 9], ["user_id", 10]]
+  ↳ app/views/welcome/index.html.erb:21
+  Rendered welcome/index.html.erb within layouts/application (Duration: 16.9ms | Allocations: 11624)
+  Rendered layout layouts/application.html.erb (Duration: 18.0ms | Allocations: 12288)
+Completed 200 OK in 32ms (Views: 14.4ms | ActiveRecord: 5.0ms | Allocations: 17961)
+
+
+Started GET "/welcome/Jean-Mich" for 127.0.0.1 at 2024-05-02 09:25:49 +0200
+Processing by WelcomeController#index as HTML
+  Parameters: {"first_name"=>"Jean-Mich"}
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/welcome/index.html.erb:21
+  [1m[36mGossip Load (0.4ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" WHERE "gossips"."user_id" IN ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10)[0m  [["user_id", 1], ["user_id", 2], ["user_id", 3], ["user_id", 4], ["user_id", 5], ["user_id", 6], ["user_id", 7], ["user_id", 8], ["user_id", 9], ["user_id", 10]]
+  ↳ app/views/welcome/index.html.erb:21
+  Rendered welcome/index.html.erb within layouts/application (Duration: 6.9ms | Allocations: 2940)
+  Rendered layout layouts/application.html.erb (Duration: 7.9ms | Allocations: 3273)
+Completed 200 OK in 9ms (Views: 7.5ms | ActiveRecord: 1.0ms | Allocations: 3555)
+
+
+Started GET "/welcome/Jean-Mich" for 127.0.0.1 at 2024-05-02 09:25:51 +0200
+Processing by WelcomeController#index as HTML
+  Parameters: {"first_name"=>"Jean-Mich"}
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/welcome/index.html.erb:21
+  [1m[36mGossip Load (0.6ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" WHERE "gossips"."user_id" IN ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10)[0m  [["user_id", 1], ["user_id", 2], ["user_id", 3], ["user_id", 4], ["user_id", 5], ["user_id", 6], ["user_id", 7], ["user_id", 8], ["user_id", 9], ["user_id", 10]]
+  ↳ app/views/welcome/index.html.erb:21
+  Rendered welcome/index.html.erb within layouts/application (Duration: 20.6ms | Allocations: 2936)
+  Rendered layout layouts/application.html.erb (Duration: 22.7ms | Allocations: 3269)
+Completed 200 OK in 24ms (Views: 22.3ms | ActiveRecord: 0.9ms | Allocations: 3551)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2024-05-02 09:30:49 +0200
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 6.1ms | Allocations: 1883)
+  Rendered layout layouts/application.html.erb (Duration: 8.6ms | Allocations: 2559)
+Completed 200 OK in 32ms (Views: 11.2ms | ActiveRecord: 2.9ms | Allocations: 10508)
+
+
+Started POST "/users" for 127.0.0.1 at 2024-05-02 09:31:07 +0200
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"tom@example.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"S'inscrire"}
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 1.4ms | Allocations: 1215)
+  Rendered layout layouts/application.html.erb (Duration: 1.9ms | Allocations: 1548)
+Completed 200 OK in 197ms (Views: 2.4ms | ActiveRecord: 0.0ms | Allocations: 3053)
+
+
+Started POST "/users" for 127.0.0.1 at 2024-05-02 09:33:52 +0200
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"tom@example.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"S'inscrire"}
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 1.8ms | Allocations: 1450)
+  Rendered layout layouts/application.html.erb (Duration: 3.0ms | Allocations: 2121)
+Completed 200 OK in 210ms (Views: 4.7ms | ActiveRecord: 2.3ms | Allocations: 11027)
+
+
+Started POST "/users" for 127.0.0.1 at 2024-05-02 09:35:38 +0200
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"tom@example.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"S'inscrire"}
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 1.7ms | Allocations: 1448)
+  Rendered layout layouts/application.html.erb (Duration: 2.8ms | Allocations: 2119)
+Completed 200 OK in 207ms (Views: 4.5ms | ActiveRecord: 2.2ms | Allocations: 11077)
+
+
+Started GET "/welcome/Jean-Mich" for 127.0.0.1 at 2024-05-02 09:35:48 +0200
+Processing by WelcomeController#index as HTML
+  Parameters: {"first_name"=>"Jean-Mich"}
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/welcome/index.html.erb:21
+  [1m[36mGossip Load (0.5ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" WHERE "gossips"."user_id" IN ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10)[0m  [["user_id", 1], ["user_id", 2], ["user_id", 3], ["user_id", 4], ["user_id", 5], ["user_id", 6], ["user_id", 7], ["user_id", 8], ["user_id", 9], ["user_id", 10]]
+  ↳ app/views/welcome/index.html.erb:21
+  Rendered welcome/index.html.erb within layouts/application (Duration: 18.8ms | Allocations: 7525)
+  Rendered layout layouts/application.html.erb (Duration: 20.4ms | Allocations: 7869)
+Completed 200 OK in 31ms (Views: 17.1ms | ActiveRecord: 4.5ms | Allocations: 10220)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2024-05-02 09:35:51 +0200
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 3.1ms | Allocations: 849)
+  Rendered layout layouts/application.html.erb (Duration: 5.8ms | Allocations: 1186)
+Completed 200 OK in 8ms (Views: 7.3ms | ActiveRecord: 0.0ms | Allocations: 1462)
+
+
+Started POST "/users" for 127.0.0.1 at 2024-05-02 09:36:07 +0200
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"tom@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"S'inscrire"}
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 1.5ms | Allocations: 1092)
+  Rendered layout layouts/application.html.erb (Duration: 2.1ms | Allocations: 1425)
+Completed 200 OK in 199ms (Views: 2.6ms | ActiveRecord: 0.0ms | Allocations: 2575)
+
+
+Started POST "/users" for 127.0.0.1 at 2024-05-02 09:37:04 +0200
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"tom@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"S'inscrire"}
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 0.5ms | Allocations: 1308)
+  Rendered layout layouts/application.html.erb (Duration: 0.7ms | Allocations: 1408)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 2.3ms | Allocations: 10451)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h1>Inscription</h1>
+
+<%= form_with(url: login_path, method: "post") do |form| %>
+  <% if flash[:alert] %>
+    <div class="alert alert-danger">
+      <%= flash[:alert] %>
+    </div>
+  <% end %>
+
+<%= form_for @user do |f| %>
+  <div>
+    <%= f.label :email %>
+    <%= f.email_field :email %>
+  </div>
+
+  <div>
+    <%= f.label :password %>
+    <%= f.password_field :password %>
+  </div>
+
+  <div>
+    <%= f.label :password_confirmation %>
+    <%= f.password_field :password_confirmation %>
+  </div>
+
+  <div>
+    <%= f.submit "S'inscrire" %>
+  </div>
+<% end %>
+):
+1:    <h1>Inscription</h1>
+2:    
+3:    <%= form_with(url: login_path, method: "post") do |form| %>
+4:      <% if flash[:alert] %>
+5:        <div class="alert alert-danger">
+6:          <%= flash[:alert] %>
+7:        </div>
+8:      <% end %>
+9:    
+10:    <%= form_for @user do |f| %>
+11:      <div>
+12:        <%= f.label :email %>
+13:        <%= f.email_field :email %>
+14:      </div>
+15:    
+16:      <div>
+17:        <%= f.label :password %>
+18:        <%= f.password_field :password %>
+19:      </div>
+20:    
+21:      <div>
+22:        <%= f.label :password_confirmation %>
+23:        <%= f.password_field :password_confirmation %>
+24:      </div>
+25:    
+26:      <div>
+27:        <%= f.submit "S'inscrire" %>
+28:      </div>
+29:    <% end %>
+  
+app/views/users/new.html.erb:31: syntax error, unexpected end-of-input
+app/controllers/users_controller.rb:17:in `create'
+Started POST "/users" for 127.0.0.1 at 2024-05-02 09:38:57 +0200
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"tom@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"S'inscrire"}
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 3.3ms | Allocations: 1974)
+  Rendered layout layouts/application.html.erb (Duration: 6.8ms | Allocations: 2645)
+Completed 200 OK in 26ms (Views: 9.0ms | ActiveRecord: 2.9ms | Allocations: 11653)
+
+
+Started GET "/welcome/Jean-Mich" for 127.0.0.1 at 2024-05-02 09:39:23 +0200
+Processing by WelcomeController#index as HTML
+  Parameters: {"first_name"=>"Jean-Mich"}
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/welcome/index.html.erb:21
+  [1m[36mGossip Load (0.3ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" WHERE "gossips"."user_id" IN ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10)[0m  [["user_id", 1], ["user_id", 2], ["user_id", 3], ["user_id", 4], ["user_id", 5], ["user_id", 6], ["user_id", 7], ["user_id", 8], ["user_id", 9], ["user_id", 10]]
+  ↳ app/views/welcome/index.html.erb:21
+  Rendered welcome/index.html.erb within layouts/application (Duration: 12.9ms | Allocations: 7539)
+  Rendered layout layouts/application.html.erb (Duration: 13.6ms | Allocations: 7883)
+Completed 200 OK in 21ms (Views: 12.1ms | ActiveRecord: 3.0ms | Allocations: 10234)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2024-05-02 09:40:31 +0200
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 1.2ms | Allocations: 820)
+  Rendered layout layouts/application.html.erb (Duration: 2.0ms | Allocations: 1157)
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.0ms | Allocations: 1431)
+
+
+Started POST "/users" for 127.0.0.1 at 2024-05-02 09:40:45 +0200
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"blabla@example.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"S'inscrire"}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:12:in `create'
+  [1m[36mUser Create (1.3ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "age", "description", "city_id", "created_at", "updated_at", "password_digest") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["first_name", nil], ["last_name", nil], ["email", "blabla@example.com"], ["age", nil], ["description", nil], ["city_id", nil], ["created_at", "2024-05-02 07:40:45.390780"], ["updated_at", "2024-05-02 07:40:45.390780"], ["password_digest", "[FILTERED]"]]
+  ↳ app/controllers/users_controller.rb:12:in `create'
+  [1m[36mTRANSACTION (2.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:12:in `create'
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 209ms (ActiveRecord: 4.1ms | Allocations: 3578)
+
+
+Started GET "/" for 127.0.0.1 at 2024-05-02 09:40:45 +0200
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/welcome/index.html.erb:21
+  [1m[36mGossip Load (0.3ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" WHERE "gossips"."user_id" IN ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11)[0m  [["user_id", 1], ["user_id", 2], ["user_id", 3], ["user_id", 4], ["user_id", 5], ["user_id", 6], ["user_id", 7], ["user_id", 8], ["user_id", 9], ["user_id", 10], ["user_id", 11]]
+  ↳ app/views/welcome/index.html.erb:21
+  Rendered welcome/index.html.erb within layouts/application (Duration: 5.6ms | Allocations: 3011)
+  Rendered layout layouts/application.html.erb (Duration: 6.8ms | Allocations: 3344)
+Completed 200 OK in 8ms (Views: 6.6ms | ActiveRecord: 0.8ms | Allocations: 3626)
+
+
+Started GET "/" for 127.0.0.1 at 2024-05-02 09:47:28 +0200
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mUser Load (8.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/welcome/index.html.erb:21
+  [1m[36mGossip Load (0.9ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" WHERE "gossips"."user_id" IN ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11)[0m  [["user_id", 1], ["user_id", 2], ["user_id", 3], ["user_id", 4], ["user_id", 5], ["user_id", 6], ["user_id", 7], ["user_id", 8], ["user_id", 9], ["user_id", 10], ["user_id", 11]]
+  ↳ app/views/welcome/index.html.erb:21
+  Rendered welcome/index.html.erb within layouts/application (Duration: 23.9ms | Allocations: 13967)
+  Rendered layout layouts/application.html.erb (Duration: 25.3ms | Allocations: 14677)
+Completed 200 OK in 41ms (Views: 13.4ms | ActiveRecord: 13.0ms | Allocations: 20423)
+
+
+Started GET "/login" for 127.0.0.1 at 2024-05-02 09:47:29 +0200
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.1ms | Allocations: 1322)
+  Rendered layout layouts/application.html.erb (Duration: 1.3ms | Allocations: 1421)
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 1915)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h1>Connexion</h1>
+
+<%= form_with(url: login_path, method: "post") do |form| %>
+  <% if flash[:alert] %>
+    <div class="alert alert-danger">
+      <%= flash[:alert] %>
+    </div>
+  <% end %>
+
+<%= form_with(url: login_path, method: "post") do |form| %>
+  <div>
+    <%= form.label :email %>
+    <%= form.email_field :email %>
+  </div>
+
+  <div>
+    <%= form.label :password %>
+    <%= form.password_field :password %>
+  </div>
+
+  <div>
+    <%= form.submit "Se connecter" %>
+  </div>
+<% end %>
+):
+1:    <h1>Connexion</h1>
+2:    
+3:    <%= form_with(url: login_path, method: "post") do |form| %>
+4:      <% if flash[:alert] %>
+5:        <div class="alert alert-danger">
+6:          <%= flash[:alert] %>
+7:        </div>
+8:      <% end %>
+9:    
+10:    <%= form_with(url: login_path, method: "post") do |form| %>
+11:      <div>
+12:        <%= form.label :email %>
+13:        <%= form.email_field :email %>
+14:      </div>
+15:    
+16:      <div>
+17:        <%= form.label :password %>
+18:        <%= form.password_field :password %>
+19:      </div>
+20:    
+21:      <div>
+22:        <%= form.submit "Se connecter" %>
+23:      </div>
+24:    <% end %>
+  
+app/views/sessions/new.html.erb:26: syntax error, unexpected end-of-input
+Started GET "/login" for 127.0.0.1 at 2024-05-02 09:48:16 +0200
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.7ms | Allocations: 2602)
+  Rendered layout layouts/application.html.erb (Duration: 3.1ms | Allocations: 3322)
+Completed 200 OK in 30ms (Views: 5.6ms | ActiveRecord: 5.7ms | Allocations: 11324)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2024-05-02 09:48:26 +0200
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 2.4ms | Allocations: 1185)
+  Rendered layout layouts/application.html.erb (Duration: 3.3ms | Allocations: 1545)
+Completed 200 OK in 5ms (Views: 4.1ms | ActiveRecord: 0.0ms | Allocations: 2018)
+
+
+Started POST "/users" for 127.0.0.1 at 2024-05-02 09:48:50 +0200
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"thomas.bobichon@hotmail.fr", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"S'inscrire"}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:12:in `create'
+  [1m[36mUser Create (1.2ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "age", "description", "city_id", "created_at", "updated_at", "password_digest") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["first_name", nil], ["last_name", nil], ["email", "thomas.bobichon@hotmail.fr"], ["age", nil], ["description", nil], ["city_id", nil], ["created_at", "2024-05-02 07:48:50.828763"], ["updated_at", "2024-05-02 07:48:50.828763"], ["password_digest", "[FILTERED]"]]
+  ↳ app/controllers/users_controller.rb:12:in `create'
+  [1m[36mTRANSACTION (2.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:12:in `create'
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 206ms (ActiveRecord: 4.3ms | Allocations: 2453)
+
+
+Started GET "/" for 127.0.0.1 at 2024-05-02 09:48:50 +0200
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/welcome/index.html.erb:21
+  [1m[36mGossip Load (0.4ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" WHERE "gossips"."user_id" IN ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12)[0m  [["user_id", 1], ["user_id", 2], ["user_id", 3], ["user_id", 4], ["user_id", 5], ["user_id", 6], ["user_id", 7], ["user_id", 8], ["user_id", 9], ["user_id", 10], ["user_id", 11], ["user_id", 12]]
+  ↳ app/views/welcome/index.html.erb:21
+  Rendered welcome/index.html.erb within layouts/application (Duration: 15.1ms | Allocations: 7636)
+  Rendered layout layouts/application.html.erb (Duration: 16.3ms | Allocations: 8000)
+Completed 200 OK in 25ms (Views: 14.4ms | ActiveRecord: 3.3ms | Allocations: 10355)
+
+
+Started GET "/login" for 127.0.0.1 at 2024-05-02 09:48:59 +0200
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.2ms | Allocations: 2300)
+  Rendered layout layouts/application.html.erb (Duration: 1.8ms | Allocations: 2657)
+Completed 200 OK in 2ms (Views: 2.1ms | ActiveRecord: 0.0ms | Allocations: 2924)
+
+
+Started POST "/login" for 127.0.0.1 at 2024-05-02 09:49:13 +0200
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "email"=>"thomas.bobichon@hotmail.fr", "password"=>"[FILTERED]", "commit"=>"Se connecter"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "thomas.bobichon@hotmail.fr"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:7:in `create'
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 199ms (ActiveRecord: 0.6ms | Allocations: 1016)
+
+
+Started GET "/" for 127.0.0.1 at 2024-05-02 09:49:13 +0200
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/welcome/index.html.erb:21
+  [1m[36mGossip Load (0.6ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" WHERE "gossips"."user_id" IN ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12)[0m  [["user_id", 1], ["user_id", 2], ["user_id", 3], ["user_id", 4], ["user_id", 5], ["user_id", 6], ["user_id", 7], ["user_id", 8], ["user_id", 9], ["user_id", 10], ["user_id", 11], ["user_id", 12]]
+  ↳ app/views/welcome/index.html.erb:21
+  Rendered welcome/index.html.erb within layouts/application (Duration: 5.5ms | Allocations: 3063)
+  Rendered layout layouts/application.html.erb (Duration: 6.7ms | Allocations: 3416)
+Completed 200 OK in 8ms (Views: 6.2ms | ActiveRecord: 1.1ms | Allocations: 3698)
+
+
+Started GET "/" for 127.0.0.1 at 2024-05-02 09:51:58 +0200
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/welcome/index.html.erb:21
+  [1m[36mGossip Load (0.4ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" WHERE "gossips"."user_id" IN ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12)[0m  [["user_id", 1], ["user_id", 2], ["user_id", 3], ["user_id", 4], ["user_id", 5], ["user_id", 6], ["user_id", 7], ["user_id", 8], ["user_id", 9], ["user_id", 10], ["user_id", 11], ["user_id", 12]]
+  ↳ app/views/welcome/index.html.erb:21
+  Rendered welcome/index.html.erb within layouts/application (Duration: 19.4ms | Allocations: 11747)
+  Rendered layout layouts/application.html.erb (Duration: 20.8ms | Allocations: 12456)
+Completed 200 OK in 35ms (Views: 16.8ms | ActiveRecord: 5.2ms | Allocations: 18201)
+
+
+Started GET "/" for 127.0.0.1 at 2024-05-02 09:52:01 +0200
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/welcome/index.html.erb:21
+  [1m[36mGossip Load (0.4ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" WHERE "gossips"."user_id" IN ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12)[0m  [["user_id", 1], ["user_id", 2], ["user_id", 3], ["user_id", 4], ["user_id", 5], ["user_id", 6], ["user_id", 7], ["user_id", 8], ["user_id", 9], ["user_id", 10], ["user_id", 11], ["user_id", 12]]
+  ↳ app/views/welcome/index.html.erb:21
+  Rendered welcome/index.html.erb within layouts/application (Duration: 6.4ms | Allocations: 3075)
+  Rendered layout layouts/application.html.erb (Duration: 7.3ms | Allocations: 3428)
+Completed 200 OK in 9ms (Views: 7.1ms | ActiveRecord: 1.0ms | Allocations: 3710)
+
+
+Started GET "/" for 127.0.0.1 at 2024-05-02 09:53:10 +0200
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/welcome/index.html.erb:21
+  [1m[36mGossip Load (0.2ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" WHERE "gossips"."user_id" IN ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12)[0m  [["user_id", 1], ["user_id", 2], ["user_id", 3], ["user_id", 4], ["user_id", 5], ["user_id", 6], ["user_id", 7], ["user_id", 8], ["user_id", 9], ["user_id", 10], ["user_id", 11], ["user_id", 12]]
+  ↳ app/views/welcome/index.html.erb:21
+  Rendered welcome/index.html.erb within layouts/application (Duration: 16.5ms | Allocations: 11707)
+  Rendered layout layouts/application.html.erb (Duration: 19.0ms | Allocations: 13177)
+Completed 500 Internal Server Error in 33ms (ActiveRecord: 4.2ms | Allocations: 18853)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `current_user' for #<ActionView::Base:0x00000000050f00>):
+    22:   </button>
+    23:   <div class="collapse navbar-collapse" id="navbarNav">
+    24:     <ul class="navbar-nav ml-auto">
+    25:       <% if current_user %>
+    26:         <li class="nav-item">
+    27:           <%= link_to "Déconnexion", logout_path, method: :delete, class: "nav-link" %>
+    28:         </li>
+  
+app/views/layouts/application.html.erb:25
+Started GET "/" for 127.0.0.1 at 2024-05-02 09:54:35 +0200
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/welcome/index.html.erb:21
+  [1m[36mGossip Load (0.3ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" WHERE "gossips"."user_id" IN ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12)[0m  [["user_id", 1], ["user_id", 2], ["user_id", 3], ["user_id", 4], ["user_id", 5], ["user_id", 6], ["user_id", 7], ["user_id", 8], ["user_id", 9], ["user_id", 10], ["user_id", 11], ["user_id", 12]]
+  ↳ app/views/welcome/index.html.erb:21
+  Rendered welcome/index.html.erb within layouts/application (Duration: 20.8ms | Allocations: 11745)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 24.0ms | Allocations: 13449)
+Completed 200 OK in 38ms (Views: 20.1ms | ActiveRecord: 5.4ms | Allocations: 19194)
+
+
+Started GET "/logout" for 127.0.0.1 at 2024-05-02 09:56:35 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/logout"):
+  
+Started GET "/logout" for 127.0.0.1 at 2024-05-02 09:57:15 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/logout"):
+  
+Started GET "/" for 127.0.0.1 at 2024-05-02 09:57:20 +0200
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/welcome/index.html.erb:24
+  [1m[36mGossip Load (0.8ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" WHERE "gossips"."user_id" IN ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12)[0m  [["user_id", 1], ["user_id", 2], ["user_id", 3], ["user_id", 4], ["user_id", 5], ["user_id", 6], ["user_id", 7], ["user_id", 8], ["user_id", 9], ["user_id", 10], ["user_id", 11], ["user_id", 12]]
+  ↳ app/views/welcome/index.html.erb:24
+  Rendered welcome/index.html.erb within layouts/application (Duration: 124.6ms | Allocations: 31901)
+  Rendered layout layouts/application.html.erb (Duration: 126.9ms | Allocations: 32650)
+Completed 200 OK in 159ms (Views: 117.0ms | ActiveRecord: 11.6ms | Allocations: 45702)
+
+
+Started GET "/logout" for 127.0.0.1 at 2024-05-02 09:57:27 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/logout"):
+  
+Started GET "/" for 127.0.0.1 at 2024-05-02 09:58:47 +0200
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/welcome/index.html.erb:24
+  [1m[36mGossip Load (0.4ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" WHERE "gossips"."user_id" IN ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12)[0m  [["user_id", 1], ["user_id", 2], ["user_id", 3], ["user_id", 4], ["user_id", 5], ["user_id", 6], ["user_id", 7], ["user_id", 8], ["user_id", 9], ["user_id", 10], ["user_id", 11], ["user_id", 12]]
+  ↳ app/views/welcome/index.html.erb:24
+  Rendered welcome/index.html.erb within layouts/application (Duration: 19.6ms | Allocations: 12850)
+  Rendered layout layouts/application.html.erb (Duration: 20.8ms | Allocations: 13511)
+Completed 200 OK in 36ms (Views: 16.3ms | ActiveRecord: 5.6ms | Allocations: 19258)
+
+
+Started GET "/logout" for 127.0.0.1 at 2024-05-02 09:58:54 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/logout"):
+  
+Started GET "/" for 127.0.0.1 at 2024-05-02 10:00:16 +0200
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/welcome/index.html.erb:24
+  [1m[36mGossip Load (0.4ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" WHERE "gossips"."user_id" IN ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12)[0m  [["user_id", 1], ["user_id", 2], ["user_id", 3], ["user_id", 4], ["user_id", 5], ["user_id", 6], ["user_id", 7], ["user_id", 8], ["user_id", 9], ["user_id", 10], ["user_id", 11], ["user_id", 12]]
+  ↳ app/views/welcome/index.html.erb:24
+  Rendered welcome/index.html.erb within layouts/application (Duration: 19.1ms | Allocations: 12841)
+  Rendered layout layouts/application.html.erb (Duration: 20.4ms | Allocations: 13627)
+Completed 200 OK in 35ms (Views: 16.8ms | ActiveRecord: 5.0ms | Allocations: 19373)
+
+
+Started GET "/contact" for 127.0.0.1 at 2024-05-02 10:00:19 +0200
+Processing by ContactController#contact as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering contact/contact.html.erb within layouts/application
+  Rendered contact/contact.html.erb within layouts/application (Duration: 0.8ms | Allocations: 350)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 3.0ms | Allocations: 1116)
+Completed 200 OK in 5ms (Views: 3.5ms | ActiveRecord: 0.3ms | Allocations: 1571)
+
+
+Started GET "/team" for 127.0.0.1 at 2024-05-02 10:00:20 +0200
+Processing by TeamController#team as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering team/team.html.erb within layouts/application
+  Rendered team/team.html.erb within layouts/application (Duration: 0.5ms | Allocations: 113)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 4.6ms | Allocations: 1078)
+Completed 200 OK in 6ms (Views: 5.0ms | ActiveRecord: 0.4ms | Allocations: 1533)
+
+
+Started GET "/" for 127.0.0.1 at 2024-05-02 10:00:21 +0200
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/welcome/index.html.erb:24
+  [1m[36mGossip Load (0.4ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" WHERE "gossips"."user_id" IN ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12)[0m  [["user_id", 1], ["user_id", 2], ["user_id", 3], ["user_id", 4], ["user_id", 5], ["user_id", 6], ["user_id", 7], ["user_id", 8], ["user_id", 9], ["user_id", 10], ["user_id", 11], ["user_id", 12]]
+  ↳ app/views/welcome/index.html.erb:24
+  Rendered welcome/index.html.erb within layouts/application (Duration: 7.1ms | Allocations: 3488)
+  Rendered layout layouts/application.html.erb (Duration: 8.3ms | Allocations: 3809)
+Completed 200 OK in 9ms (Views: 8.0ms | ActiveRecord: 1.0ms | Allocations: 4093)
+
+
+Started GET "/logout" for 127.0.0.1 at 2024-05-02 10:00:24 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/logout"):
+  
+Started GET "/logout" for 127.0.0.1 at 2024-05-02 10:02:52 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/logout"):
+  
+Started GET "/" for 127.0.0.1 at 2024-05-02 10:04:23 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/welcome/index.html.erb:24
+  [1m[36mGossip Load (0.6ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" WHERE "gossips"."user_id" IN ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12)[0m  [["user_id", 1], ["user_id", 2], ["user_id", 3], ["user_id", 4], ["user_id", 5], ["user_id", 6], ["user_id", 7], ["user_id", 8], ["user_id", 9], ["user_id", 10], ["user_id", 11], ["user_id", 12]]
+  ↳ app/views/welcome/index.html.erb:24
+  Rendered welcome/index.html.erb within layouts/application (Duration: 99.0ms | Allocations: 33216)
+  Rendered layout layouts/application.html.erb (Duration: 100.2ms | Allocations: 34121)
+Completed 200 OK in 244ms (Views: 91.5ms | ActiveRecord: 11.8ms | Allocations: 328983)
+
+
+Started GET "/" for 127.0.0.1 at 2024-05-02 10:04:48 +0200
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/welcome/index.html.erb:24
+  [1m[36mGossip Load (0.3ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" WHERE "gossips"."user_id" IN ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12)[0m  [["user_id", 1], ["user_id", 2], ["user_id", 3], ["user_id", 4], ["user_id", 5], ["user_id", 6], ["user_id", 7], ["user_id", 8], ["user_id", 9], ["user_id", 10], ["user_id", 11], ["user_id", 12]]
+  ↳ app/views/welcome/index.html.erb:24
+  Rendered welcome/index.html.erb within layouts/application (Duration: 19.5ms | Allocations: 12840)
+  Rendered layout layouts/application.html.erb (Duration: 21.1ms | Allocations: 13636)
+Completed 200 OK in 37ms (Views: 17.1ms | ActiveRecord: 5.2ms | Allocations: 19382)
+
+
+Started GET "/" for 127.0.0.1 at 2024-05-02 10:04:57 +0200
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/welcome/index.html.erb:24
+  [1m[36mGossip Load (0.3ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" WHERE "gossips"."user_id" IN ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12)[0m  [["user_id", 1], ["user_id", 2], ["user_id", 3], ["user_id", 4], ["user_id", 5], ["user_id", 6], ["user_id", 7], ["user_id", 8], ["user_id", 9], ["user_id", 10], ["user_id", 11], ["user_id", 12]]
+  ↳ app/views/welcome/index.html.erb:24
+  Rendered welcome/index.html.erb within layouts/application (Duration: 18.6ms | Allocations: 12856)
+  Rendered layout layouts/application.html.erb (Duration: 20.2ms | Allocations: 13655)
+Completed 200 OK in 36ms (Views: 16.8ms | ActiveRecord: 4.8ms | Allocations: 19403)
+
+
+Started GET "/logout" for 127.0.0.1 at 2024-05-02 10:04:58 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/logout"):
+  
+Started GET "/" for 127.0.0.1 at 2024-05-02 10:06:12 +0200
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/welcome/index.html.erb:24
+  [1m[36mGossip Load (0.3ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" WHERE "gossips"."user_id" IN ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12)[0m  [["user_id", 1], ["user_id", 2], ["user_id", 3], ["user_id", 4], ["user_id", 5], ["user_id", 6], ["user_id", 7], ["user_id", 8], ["user_id", 9], ["user_id", 10], ["user_id", 11], ["user_id", 12]]
+  ↳ app/views/welcome/index.html.erb:24
+  Rendered welcome/index.html.erb within layouts/application (Duration: 21.3ms | Allocations: 12860)
+  Rendered layout layouts/application.html.erb (Duration: 23.5ms | Allocations: 14472)
+Completed 500 Internal Server Error in 38ms (ActiveRecord: 5.8ms | Allocations: 20210)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `logout_path' for #<ActionView::Base:0x00000000021e30>):
+    46:       <!-- Lien pour les utilisateurs connectés -->
+    47:       <% if current_user %>
+    48:         <li class="nav-item">
+    49:           <%= link_to "Déconnexion", logout_path, method: :delete, class: "nav-link" %>
+    50:         </li>
+    51:       <% end %>
+    52:     </ul>
+  
+app/views/layouts/application.html.erb:49
+Started GET "/" for 127.0.0.1 at 2024-05-02 10:07:26 +0200
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/welcome/index.html.erb:24
+  [1m[36mGossip Load (0.4ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" WHERE "gossips"."user_id" IN ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12)[0m  [["user_id", 1], ["user_id", 2], ["user_id", 3], ["user_id", 4], ["user_id", 5], ["user_id", 6], ["user_id", 7], ["user_id", 8], ["user_id", 9], ["user_id", 10], ["user_id", 11], ["user_id", 12]]
+  ↳ app/views/welcome/index.html.erb:24
+  Rendered welcome/index.html.erb within layouts/application (Duration: 22.3ms | Allocations: 12859)
+  Rendered layout layouts/application.html.erb (Duration: 24.1ms | Allocations: 13657)
+Completed 200 OK in 40ms (Views: 21.3ms | ActiveRecord: 5.2ms | Allocations: 19405)
+
+
+Started GET "/logout" for 127.0.0.1 at 2024-05-02 10:07:28 +0200
+Processing by SessionsController#destroy as HTML
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 461)
+
+
+Started GET "/" for 127.0.0.1 at 2024-05-02 10:07:28 +0200
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/welcome/index.html.erb:24
+  [1m[36mGossip Load (0.3ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" WHERE "gossips"."user_id" IN ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12)[0m  [["user_id", 1], ["user_id", 2], ["user_id", 3], ["user_id", 4], ["user_id", 5], ["user_id", 6], ["user_id", 7], ["user_id", 8], ["user_id", 9], ["user_id", 10], ["user_id", 11], ["user_id", 12]]
+  ↳ app/views/welcome/index.html.erb:24
+  Rendered welcome/index.html.erb within layouts/application (Duration: 5.0ms | Allocations: 3098)
+  Rendered layout layouts/application.html.erb (Duration: 5.6ms | Allocations: 3441)
+Completed 200 OK in 7ms (Views: 5.4ms | ActiveRecord: 0.7ms | Allocations: 3724)
+
+
+Started GET "/team" for 127.0.0.1 at 2024-05-02 10:07:44 +0200
+Processing by TeamController#team as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering team/team.html.erb within layouts/application
+  Rendered team/team.html.erb within layouts/application (Duration: 0.4ms | Allocations: 113)
+  Rendered layout layouts/application.html.erb (Duration: 1.7ms | Allocations: 669)
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.0ms | Allocations: 1124)
+
+
+Started GET "/contact" for 127.0.0.1 at 2024-05-02 10:07:45 +0200
+Processing by ContactController#contact as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering contact/contact.html.erb within layouts/application
+  Rendered contact/contact.html.erb within layouts/application (Duration: 0.8ms | Allocations: 367)
+  Rendered layout layouts/application.html.erb (Duration: 1.5ms | Allocations: 731)
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.0ms | Allocations: 1186)
+
+
+Started GET "/" for 127.0.0.1 at 2024-05-02 10:07:47 +0200
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/welcome/index.html.erb:24
+  [1m[36mGossip Load (0.3ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" WHERE "gossips"."user_id" IN ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12)[0m  [["user_id", 1], ["user_id", 2], ["user_id", 3], ["user_id", 4], ["user_id", 5], ["user_id", 6], ["user_id", 7], ["user_id", 8], ["user_id", 9], ["user_id", 10], ["user_id", 11], ["user_id", 12]]
+  ↳ app/views/welcome/index.html.erb:24
+  Rendered welcome/index.html.erb within layouts/application (Duration: 5.1ms | Allocations: 3068)
+  Rendered layout layouts/application.html.erb (Duration: 5.8ms | Allocations: 3405)
+Completed 200 OK in 6ms (Views: 5.4ms | ActiveRecord: 0.8ms | Allocations: 3687)
+
+
+Started GET "/" for 127.0.0.1 at 2024-05-02 10:11:14 +0200
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/welcome/index.html.erb:24
+  [1m[36mGossip Load (0.3ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" WHERE "gossips"."user_id" IN ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12)[0m  [["user_id", 1], ["user_id", 2], ["user_id", 3], ["user_id", 4], ["user_id", 5], ["user_id", 6], ["user_id", 7], ["user_id", 8], ["user_id", 9], ["user_id", 10], ["user_id", 11], ["user_id", 12]]
+  ↳ app/views/welcome/index.html.erb:24
+  Rendered welcome/index.html.erb within layouts/application (Duration: 17.4ms | Allocations: 11818)
+  Rendered layout layouts/application.html.erb (Duration: 18.7ms | Allocations: 12633)
+Completed 200 OK in 34ms (Views: 15.1ms | ActiveRecord: 4.8ms | Allocations: 18378)
+
+
+Started GET "/" for 127.0.0.1 at 2024-05-02 10:12:06 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/welcome/index.html.erb:24
+  [1m[36mGossip Load (0.4ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" WHERE "gossips"."user_id" IN ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12)[0m  [["user_id", 1], ["user_id", 2], ["user_id", 3], ["user_id", 4], ["user_id", 5], ["user_id", 6], ["user_id", 7], ["user_id", 8], ["user_id", 9], ["user_id", 10], ["user_id", 11], ["user_id", 12]]
+  ↳ app/views/welcome/index.html.erb:24
+  Rendered welcome/index.html.erb within layouts/application (Duration: 77.5ms | Allocations: 30846)
+  Rendered layout layouts/application.html.erb (Duration: 79.2ms | Allocations: 31781)
+Completed 200 OK in 251ms (Views: 72.8ms | ActiveRecord: 10.1ms | Allocations: 326643)
+
+
+Started GET "/team" for 127.0.0.1 at 2024-05-02 10:12:59 +0200
+Processing by TeamController#team as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering team/team.html.erb within layouts/application
+  Rendered team/team.html.erb within layouts/application (Duration: 0.5ms | Allocations: 113)
+  Rendered layout layouts/application.html.erb (Duration: 1.6ms | Allocations: 675)
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.0ms | Allocations: 1134)
+
+
+Started GET "/contact" for 127.0.0.1 at 2024-05-02 10:13:02 +0200
+Processing by ContactController#contact as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering contact/contact.html.erb within layouts/application
+  Rendered contact/contact.html.erb within layouts/application (Duration: 1.4ms | Allocations: 356)
+  Rendered layout layouts/application.html.erb (Duration: 2.8ms | Allocations: 720)
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.0ms | Allocations: 1179)
+
+
+Started GET "/welcome/Thomas" for 127.0.0.1 at 2024-05-02 10:17:34 +0200
+Processing by WelcomeController#index as HTML
+  Parameters: {"first_name"=>"Thomas"}
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/welcome/index.html.erb:24
+  [1m[36mGossip Load (0.3ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" WHERE "gossips"."user_id" IN ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12)[0m  [["user_id", 1], ["user_id", 2], ["user_id", 3], ["user_id", 4], ["user_id", 5], ["user_id", 6], ["user_id", 7], ["user_id", 8], ["user_id", 9], ["user_id", 10], ["user_id", 11], ["user_id", 12]]
+  ↳ app/views/welcome/index.html.erb:24
+  Rendered welcome/index.html.erb within layouts/application (Duration: 18.4ms | Allocations: 11738)
+  Rendered layout layouts/application.html.erb (Duration: 19.7ms | Allocations: 12553)
+Completed 200 OK in 35ms (Views: 15.0ms | ActiveRecord: 5.8ms | Allocations: 18299)
+
+
+Started GET "/welcome/Thomas" for 127.0.0.1 at 2024-05-02 10:20:16 +0200
+Processing by WelcomeController#index as HTML
+  Parameters: {"first_name"=>"Thomas"}
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/welcome/index.html.erb:24
+  [1m[36mGossip Load (0.4ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" WHERE "gossips"."user_id" IN ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12)[0m  [["user_id", 1], ["user_id", 2], ["user_id", 3], ["user_id", 4], ["user_id", 5], ["user_id", 6], ["user_id", 7], ["user_id", 8], ["user_id", 9], ["user_id", 10], ["user_id", 11], ["user_id", 12]]
+  ↳ app/views/welcome/index.html.erb:24
+  Rendered welcome/index.html.erb within layouts/application (Duration: 20.1ms | Allocations: 11791)
+  Rendered layout layouts/application.html.erb (Duration: 21.5ms | Allocations: 12606)
+Completed 200 OK in 38ms (Views: 17.4ms | ActiveRecord: 5.7ms | Allocations: 18304)
+
+
+Started GET "/" for 127.0.0.1 at 2024-05-02 10:20:17 +0200
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/welcome/index.html.erb:24
+  [1m[36mGossip Load (0.4ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" WHERE "gossips"."user_id" IN ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12)[0m  [["user_id", 1], ["user_id", 2], ["user_id", 3], ["user_id", 4], ["user_id", 5], ["user_id", 6], ["user_id", 7], ["user_id", 8], ["user_id", 9], ["user_id", 10], ["user_id", 11], ["user_id", 12]]
+  ↳ app/views/welcome/index.html.erb:24
+  Rendered welcome/index.html.erb within layouts/application (Duration: 5.9ms | Allocations: 3055)
+  Rendered layout layouts/application.html.erb (Duration: 6.9ms | Allocations: 3392)
+Completed 200 OK in 8ms (Views: 6.5ms | ActiveRecord: 0.9ms | Allocations: 3674)
+
+
+Started GET "/" for 127.0.0.1 at 2024-05-02 10:22:05 +0200
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/welcome/index.html.erb:24
+  [1m[36mGossip Load (0.3ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" WHERE "gossips"."user_id" IN ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12)[0m  [["user_id", 1], ["user_id", 2], ["user_id", 3], ["user_id", 4], ["user_id", 5], ["user_id", 6], ["user_id", 7], ["user_id", 8], ["user_id", 9], ["user_id", 10], ["user_id", 11], ["user_id", 12]]
+  ↳ app/views/welcome/index.html.erb:24
+  Rendered welcome/index.html.erb within layouts/application (Duration: 17.0ms | Allocations: 11809)
+  Rendered layout layouts/application.html.erb (Duration: 18.3ms | Allocations: 12266)
+Completed 200 OK in 31ms (Views: 15.0ms | ActiveRecord: 4.7ms | Allocations: 18012)
+
+
+Started GET "/" for 127.0.0.1 at 2024-05-02 10:22:09 +0200
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/welcome/index.html.erb:24
+  [1m[36mGossip Load (0.4ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" WHERE "gossips"."user_id" IN ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12)[0m  [["user_id", 1], ["user_id", 2], ["user_id", 3], ["user_id", 4], ["user_id", 5], ["user_id", 6], ["user_id", 7], ["user_id", 8], ["user_id", 9], ["user_id", 10], ["user_id", 11], ["user_id", 12]]
+  ↳ app/views/welcome/index.html.erb:24
+  Rendered welcome/index.html.erb within layouts/application (Duration: 5.2ms | Allocations: 3064)
+  Rendered layout layouts/application.html.erb (Duration: 5.7ms | Allocations: 3228)
+Completed 200 OK in 7ms (Views: 5.4ms | ActiveRecord: 0.9ms | Allocations: 3514)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2024-05-02 10:22:13 +0200
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 4.0ms | Allocations: 2182)
+  Rendered layout layouts/application.html.erb (Duration: 4.9ms | Allocations: 2346)
+Completed 200 OK in 6ms (Views: 5.6ms | ActiveRecord: 0.0ms | Allocations: 2854)
+
+
+Started GET "/" for 127.0.0.1 at 2024-05-02 10:22:16 +0200
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/welcome/index.html.erb:24
+  [1m[36mGossip Load (0.6ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" WHERE "gossips"."user_id" IN ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12)[0m  [["user_id", 1], ["user_id", 2], ["user_id", 3], ["user_id", 4], ["user_id", 5], ["user_id", 6], ["user_id", 7], ["user_id", 8], ["user_id", 9], ["user_id", 10], ["user_id", 11], ["user_id", 12]]
+  ↳ app/views/welcome/index.html.erb:24
+  Rendered welcome/index.html.erb within layouts/application (Duration: 8.9ms | Allocations: 3054)
+  Rendered layout layouts/application.html.erb (Duration: 9.6ms | Allocations: 3218)
+Completed 200 OK in 11ms (Views: 9.4ms | ActiveRecord: 1.3ms | Allocations: 3500)
+
+
+Started GET "/" for 127.0.0.1 at 2024-05-02 10:23:35 +0200
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/welcome/index.html.erb:24
+  [1m[36mGossip Load (0.3ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" WHERE "gossips"."user_id" IN ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12)[0m  [["user_id", 1], ["user_id", 2], ["user_id", 3], ["user_id", 4], ["user_id", 5], ["user_id", 6], ["user_id", 7], ["user_id", 8], ["user_id", 9], ["user_id", 10], ["user_id", 11], ["user_id", 12]]
+  ↳ app/views/welcome/index.html.erb:24
+  Rendered welcome/index.html.erb within layouts/application (Duration: 16.8ms | Allocations: 11778)
+  Rendered layout layouts/application.html.erb (Duration: 18.2ms | Allocations: 12477)
+Completed 200 OK in 32ms (Views: 14.9ms | ActiveRecord: 4.9ms | Allocations: 18223)
+
+
+Started GET "/" for 127.0.0.1 at 2024-05-02 10:25:02 +0200
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/welcome/index.html.erb:24
+  [1m[36mGossip Load (0.4ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" WHERE "gossips"."user_id" IN ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12)[0m  [["user_id", 1], ["user_id", 2], ["user_id", 3], ["user_id", 4], ["user_id", 5], ["user_id", 6], ["user_id", 7], ["user_id", 8], ["user_id", 9], ["user_id", 10], ["user_id", 11], ["user_id", 12]]
+  ↳ app/views/welcome/index.html.erb:24
+  Rendered welcome/index.html.erb within layouts/application (Duration: 16.9ms | Allocations: 11750)
+  Rendered layout layouts/application.html.erb (Duration: 18.6ms | Allocations: 12434)
+Completed 200 OK in 33ms (Views: 15.1ms | ActiveRecord: 4.6ms | Allocations: 18130)
+
+
+Started GET "/login" for 127.0.0.1 at 2024-05-02 10:25:05 +0200
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 4.8ms | Allocations: 2651)
+  Rendered layout layouts/application.html.erb (Duration: 5.9ms | Allocations: 2951)
+Completed 200 OK in 8ms (Views: 6.8ms | ActiveRecord: 0.0ms | Allocations: 3441)
+
+
+Started GET "/" for 127.0.0.1 at 2024-05-02 10:25:08 +0200
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/welcome/index.html.erb:24
+  [1m[36mGossip Load (0.3ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" WHERE "gossips"."user_id" IN ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12)[0m  [["user_id", 1], ["user_id", 2], ["user_id", 3], ["user_id", 4], ["user_id", 5], ["user_id", 6], ["user_id", 7], ["user_id", 8], ["user_id", 9], ["user_id", 10], ["user_id", 11], ["user_id", 12]]
+  ↳ app/views/welcome/index.html.erb:24
+  Rendered welcome/index.html.erb within layouts/application (Duration: 5.5ms | Allocations: 3064)
+  Rendered layout layouts/application.html.erb (Duration: 6.1ms | Allocations: 3357)
+Completed 200 OK in 7ms (Views: 5.7ms | ActiveRecord: 0.9ms | Allocations: 3639)
+
+
+Started GET "/" for 127.0.0.1 at 2024-05-02 10:26:26 +0200
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/welcome/index.html.erb:24
+  [1m[36mGossip Load (0.2ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" WHERE "gossips"."user_id" IN ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12)[0m  [["user_id", 1], ["user_id", 2], ["user_id", 3], ["user_id", 4], ["user_id", 5], ["user_id", 6], ["user_id", 7], ["user_id", 8], ["user_id", 9], ["user_id", 10], ["user_id", 11], ["user_id", 12]]
+  ↳ app/views/welcome/index.html.erb:24
+  Rendered welcome/index.html.erb within layouts/application (Duration: 17.9ms | Allocations: 11757)
+  Rendered layout layouts/application.html.erb (Duration: 20.4ms | Allocations: 12533)
+Completed 200 OK in 38ms (Views: 16.4ms | ActiveRecord: 5.5ms | Allocations: 18224)
+
+
+Started GET "/team" for 127.0.0.1 at 2024-05-02 10:26:27 +0200
+Processing by TeamController#team as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering team/team.html.erb within layouts/application
+  Rendered team/team.html.erb within layouts/application (Duration: 0.6ms | Allocations: 111)
+  Rendered layout layouts/application.html.erb (Duration: 2.0ms | Allocations: 670)
+Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.0ms | Allocations: 1125)
+
+
+Started GET "/login" for 127.0.0.1 at 2024-05-02 10:26:30 +0200
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 2.8ms | Allocations: 2617)
+  Rendered layout layouts/application.html.erb (Duration: 3.6ms | Allocations: 2957)
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.0ms | Allocations: 3446)
+
+
+Started POST "/login" for 127.0.0.1 at 2024-05-02 10:26:44 +0200
+  
+ActionController::RoutingError (No route matches [POST] "/login"):
+  
+Started POST "/login" for 127.0.0.1 at 2024-05-02 10:28:27 +0200
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "email"=>"thomas.bobichon@hotmail.fr", "password"=>"[FILTERED]", "commit"=>"Se connecter"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "thomas.bobichon@hotmail.fr"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:7:in `create'
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.7ms | Allocations: 2364)
+  Rendered layout layouts/application.html.erb (Duration: 2.8ms | Allocations: 3145)
+Completed 200 OK in 218ms (Views: 4.5ms | ActiveRecord: 2.9ms | Allocations: 13231)
+
+
+Started POST "/login" for 127.0.0.1 at 2024-05-02 10:28:41 +0200
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "email"=>"thomas.bobichon@hotmail.fr", "password"=>"[FILTERED]", "commit"=>"Se connecter"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "thomas.bobichon@hotmail.fr"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:7:in `create'
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 200ms (ActiveRecord: 0.3ms | Allocations: 914)
+
+
+Started GET "/" for 127.0.0.1 at 2024-05-02 10:28:42 +0200
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/welcome/index.html.erb:24
+  [1m[36mGossip Load (0.2ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" WHERE "gossips"."user_id" IN ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12)[0m  [["user_id", 1], ["user_id", 2], ["user_id", 3], ["user_id", 4], ["user_id", 5], ["user_id", 6], ["user_id", 7], ["user_id", 8], ["user_id", 9], ["user_id", 10], ["user_id", 11], ["user_id", 12]]
+  ↳ app/views/welcome/index.html.erb:24
+  Rendered welcome/index.html.erb within layouts/application (Duration: 13.0ms | Allocations: 8750)
+  Rendered layout layouts/application.html.erb (Duration: 13.6ms | Allocations: 9128)
+Completed 200 OK in 20ms (Views: 11.9ms | ActiveRecord: 2.3ms | Allocations: 11439)
+
+
+Started GET "/" for 127.0.0.1 at 2024-05-02 10:30:12 +0200
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/welcome/index.html.erb:24
+  [1m[36mGossip Load (0.2ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" WHERE "gossips"."user_id" IN ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12)[0m  [["user_id", 1], ["user_id", 2], ["user_id", 3], ["user_id", 4], ["user_id", 5], ["user_id", 6], ["user_id", 7], ["user_id", 8], ["user_id", 9], ["user_id", 10], ["user_id", 11], ["user_id", 12]]
+  ↳ app/views/welcome/index.html.erb:24
+  Rendered welcome/index.html.erb within layouts/application (Duration: 54.9ms | Allocations: 12824)
+  Rendered layout layouts/application.html.erb (Duration: 58.2ms | Allocations: 13631)
+Completed 200 OK in 90ms (Views: 56.0ms | ActiveRecord: 5.8ms | Allocations: 19334)
+
+
+Started GET "/" for 127.0.0.1 at 2024-05-02 10:32:42 +0200
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/welcome/index.html.erb:24
+  [1m[36mGossip Load (0.3ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" WHERE "gossips"."user_id" IN ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12)[0m  [["user_id", 1], ["user_id", 2], ["user_id", 3], ["user_id", 4], ["user_id", 5], ["user_id", 6], ["user_id", 7], ["user_id", 8], ["user_id", 9], ["user_id", 10], ["user_id", 11], ["user_id", 12]]
+  ↳ app/views/welcome/index.html.erb:24
+  Rendered welcome/index.html.erb within layouts/application (Duration: 20.1ms | Allocations: 12802)
+  Rendered layout layouts/application.html.erb (Duration: 21.3ms | Allocations: 13605)
+Completed 200 OK in 36ms (Views: 17.2ms | ActiveRecord: 5.2ms | Allocations: 19324)
+
+
+Started GET "/gossips/new" for 127.0.0.1 at 2024-05-02 10:32:45 +0200
+Processing by GossipsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering gossips/new.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."first_name" = $1 LIMIT $2[0m  [["first_name", "Anonyme"], ["LIMIT", 1]]
+  ↳ app/views/gossips/new.html.erb:28
+  Rendered gossips/new.html.erb within layouts/application (Duration: 6.7ms | Allocations: 2852)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 8.4ms | Allocations: 3632)
+Completed 200 OK in 10ms (Views: 8.4ms | ActiveRecord: 0.5ms | Allocations: 4114)
+
+
+Started POST "/gossips" for 127.0.0.1 at 2024-05-02 10:32:58 +0200
+Processing by GossipsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "gossip"=>{"title"=>"Test Commentaire", "description"=>"Ceci est un test", "user_id"=>""}, "commit"=>"Submit"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering gossips/new.html.erb within layouts/application
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."first_name" = $1 LIMIT $2[0m  [["first_name", "Anonyme"], ["LIMIT", 1]]
+  ↳ app/views/gossips/new.html.erb:28
+  Rendered gossips/new.html.erb within layouts/application (Duration: 7.6ms | Allocations: 2135)
+  Rendered layout layouts/application.html.erb (Duration: 9.0ms | Allocations: 2493)
+Completed 200 OK in 15ms (Views: 9.1ms | ActiveRecord: 1.3ms | Allocations: 4371)
+
+
+Started POST "/gossips" for 127.0.0.1 at 2024-05-02 10:33:08 +0200
+Processing by GossipsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "gossip"=>{"title"=>"TestCom", "description"=>"Ceci est un test", "user_id"=>""}, "commit"=>"Submit"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/gossips_controller.rb:18:in `create'
+  [1m[36mGossip Create (1.8ms)[0m  [1m[32mINSERT INTO "gossips" ("title", "description", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "TestCom"], ["description", "Ceci est un test"], ["user_id", 12], ["created_at", "2024-05-02 08:33:08.251288"], ["updated_at", "2024-05-02 08:33:08.251288"]]
+  ↳ app/controllers/gossips_controller.rb:18:in `create'
+  [1m[36mTRANSACTION (1.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/gossips_controller.rb:18:in `create'
+Redirected to http://127.0.0.1:3000/gossips/21
+Completed 302 Found in 15ms (ActiveRecord: 4.2ms | Allocations: 3584)
+
+
+Started GET "/gossips/21" for 127.0.0.1 at 2024-05-02 10:33:08 +0200
+Processing by GossipsController#show as HTML
+  Parameters: {"id"=>"21"}
+  [1m[36mGossip Load (0.2ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" WHERE "gossips"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/controllers/gossips_controller.rb:3:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering gossips/show.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/gossips/show.html.erb:9
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."gossip_id" = $1[0m  [["gossip_id", 21]]
+  ↳ app/views/gossips/show.html.erb:22
+  Rendered gossips/show.html.erb within layouts/application (Duration: 11.6ms | Allocations: 5694)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 14.4ms | Allocations: 6372)
+Completed 200 OK in 33ms (Views: 13.1ms | ActiveRecord: 3.8ms | Allocations: 13184)
+
+
+Started GET "/gossips/21/edit" for 127.0.0.1 at 2024-05-02 10:33:16 +0200
+Processing by GossipsController#edit as HTML
+  Parameters: {"id"=>"21"}
+  [1m[36mGossip Load (0.7ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" WHERE "gossips"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/controllers/gossips_controller.rb:27:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering gossips/edit.html.erb within layouts/application
+  Rendered gossips/edit.html.erb within layouts/application (Duration: 3.8ms | Allocations: 998)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 6.1ms | Allocations: 1771)
+Completed 200 OK in 13ms (Views: 7.0ms | ActiveRecord: 0.9ms | Allocations: 2490)
+
+
+Started PATCH "/gossips/21" for 127.0.0.1 at 2024-05-02 10:33:18 +0200
+Processing by GossipsController#update as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "gossip"=>{"title"=>"TestCom", "description"=>"Ceci est un test"}, "commit"=>"Enregistrer", "id"=>"21"}
+  [1m[36mGossip Load (0.4ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" WHERE "gossips"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/controllers/gossips_controller.rb:31:in `update'
+Redirected to http://127.0.0.1:3000/gossips/21
+Completed 302 Found in 3ms (ActiveRecord: 0.3ms | Allocations: 1067)
+
+
+Started GET "/gossips/21" for 127.0.0.1 at 2024-05-02 10:33:18 +0200
+Processing by GossipsController#show as HTML
+  Parameters: {"id"=>"21"}
+  [1m[36mGossip Load (0.3ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" WHERE "gossips"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/controllers/gossips_controller.rb:3:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering gossips/show.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/gossips/show.html.erb:9
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."gossip_id" = $1[0m  [["gossip_id", 21]]
+  ↳ app/views/gossips/show.html.erb:22
+  Rendered gossips/show.html.erb within layouts/application (Duration: 3.9ms | Allocations: 1528)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 5.7ms | Allocations: 2184)
+Completed 200 OK in 8ms (Views: 5.7ms | ActiveRecord: 0.8ms | Allocations: 2855)
+
+
+Started GET "/gossips/21/comments/new" for 127.0.0.1 at 2024-05-02 10:33:20 +0200
+Processing by CommentsController#new as HTML
+  Parameters: {"gossip_id"=>"21"}
+  [1m[36mGossip Load (0.3ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" WHERE "gossips"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/controllers/comments_controller.rb:15:in `new'
+  Rendering layout layouts/application.html.erb
+  Rendering comments/new.html.erb within layouts/application
+  Rendered comments/new.html.erb within layouts/application (Duration: 2.2ms | Allocations: 728)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 4.9ms | Allocations: 1504)
+Completed 200 OK in 8ms (Views: 5.2ms | ActiveRecord: 0.7ms | Allocations: 2455)
+
+
+Started POST "/gossips/21/comments" for 127.0.0.1 at 2024-05-02 10:33:25 +0200
+Processing by CommentsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "comment"=>{"text"=>"De la bombe bébé", "gossip_id"=>"21"}, "commit"=>"Créer le commentaire", "gossip_id"=>"21"}
+  [1m[36mGossip Load (0.3ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" WHERE "gossips"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/controllers/comments_controller.rb:25:in `create'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/comments_controller.rb:28:in `create'
+  [1m[36mComment Create (6.4ms)[0m  [1m[32mINSERT INTO "comments" ("text", "user_id", "gossip_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["text", "De la bombe bébé"], ["user_id", 12], ["gossip_id", 21], ["created_at", "2024-05-02 08:33:25.993502"], ["updated_at", "2024-05-02 08:33:25.993502"]]
+  ↳ app/controllers/comments_controller.rb:28:in `create'
+  [1m[36mTRANSACTION (2.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/comments_controller.rb:28:in `create'
+Redirected to http://127.0.0.1:3000/gossips/21
+Completed 302 Found in 19ms (ActiveRecord: 9.8ms | Allocations: 4083)
+
+
+Started GET "/gossips/21" for 127.0.0.1 at 2024-05-02 10:33:26 +0200
+Processing by GossipsController#show as HTML
+  Parameters: {"id"=>"21"}
+  [1m[36mGossip Load (0.3ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" WHERE "gossips"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/controllers/gossips_controller.rb:3:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering gossips/show.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/gossips/show.html.erb:9
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."gossip_id" = $1[0m  [["gossip_id", 21]]
+  ↳ app/views/gossips/show.html.erb:22
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/gossips/show.html.erb:24
+  Rendered gossips/show.html.erb within layouts/application (Duration: 5.8ms | Allocations: 3493)
+  Rendered layout layouts/application.html.erb (Duration: 6.0ms | Allocations: 3584)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 1.0ms | Allocations: 4258)
+
+
+  
+ActionView::Template::Error (undefined method `name' for #<User id: 12, first_name: nil, last_name: nil, email: "thomas.bobichon@hotmail.fr", age: nil, description: nil, city_id: nil, created_at: "2024-05-02 07:48:50.828763000 +0000", updated_at: "2024-05-02 07:48:50.828763000 +0000", password_digest: [FILTERED]>):
+    21: 
+    22: <% @gossip.comments.each do |comment| %>
+    23:   <div class="comment">
+    24:     <p><strong>Auteur :</strong> <%= comment.user ? comment.user.name : "Anonyme" %></p>
+    25:     <p><%= comment.text %></p>
+    26:     <%= link_to "Modifier", edit_comment_path(comment) %>
+    27:   </div>
+  
+app/views/gossips/show.html.erb:24
+app/views/gossips/show.html.erb:22
+Started GET "/" for 127.0.0.1 at 2024-05-02 10:34:29 +0200
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/welcome/index.html.erb:24
+  [1m[36mGossip Load (0.6ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" WHERE "gossips"."user_id" IN ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12)[0m  [["user_id", 1], ["user_id", 2], ["user_id", 3], ["user_id", 4], ["user_id", 5], ["user_id", 6], ["user_id", 7], ["user_id", 8], ["user_id", 9], ["user_id", 10], ["user_id", 11], ["user_id", 12]]
+  ↳ app/views/welcome/index.html.erb:24
+  Rendered welcome/index.html.erb within layouts/application (Duration: 15.1ms | Allocations: 3541)
+  Rendered layout layouts/application.html.erb (Duration: 17.4ms | Allocations: 3899)
+Completed 200 OK in 20ms (Views: 17.3ms | ActiveRecord: 1.6ms | Allocations: 4180)
+
+
+Started GET "/logout" for 127.0.0.1 at 2024-05-02 10:34:30 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/logout"):
+  
+Started GET "/users/new" for 127.0.0.1 at 2024-05-02 10:36:54 +0200
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 2.1ms | Allocations: 1176)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 4.0ms | Allocations: 1958)
+Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.2ms | Allocations: 2433)
+
+
+Started GET "/" for 127.0.0.1 at 2024-05-02 10:36:55 +0200
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/welcome/index.html.erb:24
+  [1m[36mGossip Load (0.8ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" WHERE "gossips"."user_id" IN ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12)[0m  [["user_id", 1], ["user_id", 2], ["user_id", 3], ["user_id", 4], ["user_id", 5], ["user_id", 6], ["user_id", 7], ["user_id", 8], ["user_id", 9], ["user_id", 10], ["user_id", 11], ["user_id", 12]]
+  ↳ app/views/welcome/index.html.erb:24
+  Rendered welcome/index.html.erb within layouts/application (Duration: 16.5ms | Allocations: 3522)
+  Rendered layout layouts/application.html.erb (Duration: 17.9ms | Allocations: 3880)
+Completed 200 OK in 20ms (Views: 17.0ms | ActiveRecord: 1.8ms | Allocations: 4161)
+
+
+Started GET "/login" for 127.0.0.1 at 2024-05-02 10:36:57 +0200
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 2.5ms | Allocations: 2599)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 5.0ms | Allocations: 3381)
+Completed 200 OK in 6ms (Views: 5.5ms | ActiveRecord: 0.3ms | Allocations: 3858)
+
+
+Started GET "/" for 127.0.0.1 at 2024-05-02 10:36:58 +0200
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/welcome/index.html.erb:24
+  [1m[36mGossip Load (0.5ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" WHERE "gossips"."user_id" IN ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12)[0m  [["user_id", 1], ["user_id", 2], ["user_id", 3], ["user_id", 4], ["user_id", 5], ["user_id", 6], ["user_id", 7], ["user_id", 8], ["user_id", 9], ["user_id", 10], ["user_id", 11], ["user_id", 12]]
+  ↳ app/views/welcome/index.html.erb:24
+  Rendered welcome/index.html.erb within layouts/application (Duration: 13.5ms | Allocations: 3516)
+  Rendered layout layouts/application.html.erb (Duration: 14.6ms | Allocations: 3874)
+Completed 200 OK in 16ms (Views: 14.3ms | ActiveRecord: 1.1ms | Allocations: 4155)
+
+
+Started GET "/logout" for 127.0.0.1 at 2024-05-02 10:36:59 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/logout"):
+  
+Started GET "/logout" for 127.0.0.1 at 2024-05-02 10:44:00 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/logout"):
+  
+Started GET "/logout" for 127.0.0.1 at 2024-05-02 10:44:00 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/logout"):
+  

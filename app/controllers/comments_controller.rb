@@ -24,7 +24,7 @@ class CommentsController < ApplicationController
   def create
     @gossip = Gossip.find(params[:gossip_id])
     @comment = @gossip.comments.build(comment_params)
-    @comment.user = User.anonymous_user
+    @comment.user = current_user if current_user # Associer le commentaire à l'utilisateur connecté s'il existe
     if @comment.save
       redirect_to @gossip, notice: "Commentaire créé avec succès !"
     else

@@ -4,19 +4,22 @@ class SessionsController < ApplicationController
   end
 
   def create
-    user = User.find_by(email: params[:session][:email])
-
-    if user && user.authenticate(params[:session][:password])
+    user = User.find_by(email: params[:email])
+    if user && user.authenticate(params[:password])
       session[:user_id] = user.id
-      redirect_to root_path, notice: 'Connexion réussie !'
-
+      flash[:notice] = "Connexion réussie ! Bienvenue, #{user.email} !"
+      redirect_to root_path
     else
-      flash.now[:danger] = 'Combinaison email/mot de passe invalide.'
-      render 'new'
+      flash.now[:alert] = "Email ou mot de passe incorrect"
+      render :new
     end
   end
 
 
   def destroy
+    session[:user_id] = nil
+    flash[:notice] = "Vous avez été déconnecté avec succès !"
+    redirect_to root_path
+    puts "La méthode est bien executée"
   end
 end
