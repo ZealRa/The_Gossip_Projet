@@ -21,7 +21,7 @@
 
 <% @gossip.comments.each do |comment| %>
   <div class="comment">
-    <p><strong>Auteur :</strong> <%= comment.user ? comment.user.name : "Anonyme" %></p>
+    <p><strong>Auteur :</strong> <%= comment.user ? comment.user.id : "Anonyme" %></p>
     <p><%= comment.text %></p>
     <%= link_to "Modifier", edit_comment_path(comment) %>
   </div>

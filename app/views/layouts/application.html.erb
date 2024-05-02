@@ -33,7 +33,7 @@ Si vous avez besoin des fonctionnalités JavaScript de Bootstrap --> %>
       <!-- Bouton pour la déconnexion -->
       <% if current_user %>
         <li class="nav-item">
-          <%= link_to "Déconnexion", logout_path, method: :delete, class: "nav-link" %>
+          <%= button_to "Déconnexion", logout_path, method: :delete, class: "btn btn-primary" %>
         </li>
       <% end %>
             <!-- Bouton pour la page Team -->

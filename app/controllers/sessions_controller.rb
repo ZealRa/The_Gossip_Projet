@@ -20,6 +20,5 @@ class SessionsController < ApplicationController
     session[:user_id] = nil
     flash[:notice] = "Vous avez été déconnecté avec succès !"
     redirect_to root_path
-    puts "La méthode est bien executée"
   end
 end
