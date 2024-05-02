@@ -1,4 +1,8 @@
 class GossipsController < ApplicationController
+  before_action :require_login, only: [:new, :create, :show]
+  before_action :require_creator, only: [:edit, :update, :destroy]
+
+
   def show
     @gossip = Gossip.find(params[:id])
     @comment = Comment.new
@@ -43,6 +47,21 @@ class GossipsController < ApplicationController
   end
 
   private
+  def require_login
+    unless current_user
+      flash[:alert] = "Vous devez être connecté pour accéder à cette page."
+      redirect_to login_path
+    end
+  end
+
+  def require_creator
+    @gossip = Gossip.find(params[:id])
+    unless current_user == @gossip.user
+      flash[:alert] = "Vous n'êtes pas autorisé à effectuer cette action."
+      redirect_to root_path
+    end
+  end
+
   def gossip_params
     params.require(:gossip).permit(:title, :description, :user_id)
   end

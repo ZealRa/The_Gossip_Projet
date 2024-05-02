@@ -21,12 +21,17 @@
 
 <% @gossip.comments.each do |comment| %>
   <div class="comment">
-    <p><strong>Auteur :</strong> <%= comment.user ? comment.user.id : "Anonyme" %></p>
+    <p><strong>Auteur :</strong> <%= comment.user.first_name %></p>
     <p><%= comment.text %></p>
-    <%= link_to "Modifier", edit_comment_path(comment) %>
+    <% if current_user == comment.user %>
+      <%= link_to "Modifier", edit_comment_path(comment) %>
+    <% end %>
   </div>
 <% end %>
-<%= link_to "Modifier le potin", edit_gossip_path(@gossip), class: "btn btn-primary" %>
+
+<% if current_user == @gossip.user %>
+  <%= link_to "Modifier", edit_gossip_path(@gossip), class: "btn btn-primary" %>
+<% end %>
+
 <%= button_to "Supprimer", gossip_path(@gossip), method: :delete, class: "btn btn-danger" %>
 <%= link_to "Ajouter un commentaire", new_gossip_comment_path(@gossip), class: "btn btn-primary" %>
-
